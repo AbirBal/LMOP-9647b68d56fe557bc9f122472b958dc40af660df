@@ -1,0 +1,174 @@
+  body {
+      font-family: "Merriweather", serif;
+      background-color: #f9fafb;
+    }  
+    .content{
+      margin-left: 120px;
+      margin-right: 20px;
+    }
+     .navigation {
+      display: flex;
+      align-items: baseline; 
+      gap: 12px;
+      margin-top: 150px;
+     }
+
+.navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  color:rgb(32, 32, 222)
+}
+.navigation a:hover{
+  color:rgb(17, 175, 237)
+}
+
+h1{
+ font-size: 2rem;
+ font-weight: bold;
+ color:#133b5c;
+}
+.navigation p {
+  font-size: 1rem;
+ text-decoration: none;
+ color:#133b5c;
+ 
+}
+ #backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+   .manifestations-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .year-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      justify-content: space-between;
+
+    }
+
+    .year-label::before,
+    .year-label::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: #ccc;
+      margin: 0 20px;
+    }
+
+    .year-label span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2563eb;
+      background: #f9fafb;
+      padding: 0 15px;
+    }
+
+    .posters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+      gap: 20px;
+    }
+
+    .poster-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .poster-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .poster-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .poster-title {
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+       /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .close-btn {
+      font-size: 2rem;
+      color: white;
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    .close-btn:hover {
+      color: #ff6666;
+    }
+
+    @media (max-width: 600px) {
+      .year-label span {
+        font-size: 1.4rem;
+      }
+
+      .poster-title {
+        font-size: 0.9rem;
+      }
+    }
+
+
+
+
+
+

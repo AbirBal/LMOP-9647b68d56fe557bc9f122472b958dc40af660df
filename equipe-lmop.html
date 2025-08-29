@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" sizes="16x16" type="image/png" href="image\lmop-icon.png">
+  <title>Équipe de Laboratoire | Laboratoire Matériaux, Organisation et Propriétés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styleNavbar.css" />
+    <link rel="stylesheet" href="styleFooter.css" />
+    <link rel="stylesheet" href="styleEquipe.css" />
+    <!-- Google Translate Script -->
+ <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr', // Langue par défaut
+      includedLanguages: 'fr,en,ar', // Langues disponibles : Français, Anglais, Arabe
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+  </script>
+</head>
+<body>
+ <div class="navbar-main">
+        <div>
+          <a href="https://utm.rnu.tn/utm/fr/" target="_blank"><img src="image\Logo_UTM.png" alt="Logo" class="logo-img"></a>
+          <a href="https://fst.rnu.tn/fr" target="_blank"><img src="image\Logo_FST.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <ul>
+          <!--<a href="contact.html">Contact</a> 
+          <a href="login.html">Se connecter</a> -->
+          <div class="navbar-lang dropdown">
+            <i class="fas fa-globe"></i> Langue ▾
+            <div class="dropdown-content">
+              <div id="google_translate_element"></div> <!-- Ajout du widget de traduction -->
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="navbar-sub">
+        <div>
+          <img src="image/lmop.png" alt="Logo" class="logo-img-lmop" onclick="window.location.href='acceuil-lmop.html'">
+        </div>
+        <!-- Bouton Hamburger -->
+        <button class="menu-toggle-sub">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+          <li><a href="acceuil-lmop.html">Accueil</a></li>
+          <li><a href="presentation-lmop.html">Présentation</a></li>
+          <li><a href="equipe-lmop.html">Équipes</a>
+            <ul>
+              <li><a href="equipe-lmop.html#direction">Direction</a></li>
+              <li><a href="equipe-lmop.html#professeurs">Professeurs</a></li>
+              <li><a href="equipe-lmop.html#maîtres-de-conférences">Maîtres de conférences</a></li>
+              <li><a href="equipe-lmop.html#maîtres-assistants">Maîtres Assistants</a></li>
+              <li><a href="equipe-lmop.html#chercheurs">Chercheurs</a>
+              <ul >
+                <li><a href="equipe-lmop.html#assistants-contractuels">Assistants contractuels</a></li>
+                <li><a href="equipe-lmop.html#pes">P.E.S (Docteurs)</a></li>
+                <li><a href="equipe-lmop.html#post-doc">Post-Doctorants</a></li>
+              </ul>
+            </li>
+              <li><a href="equipe-lmop.html#doctorants">Doctorants</a></li>
+              <li><a href="equipe-lmop.html#etudiants-mastère">Etudiants en Mastère</a></li>
+            </ul>
+          </li>
+          <li><a href="projet-lmop.html">Projets</a></li>
+          <li><a href="publications-lmop.html">Publications</a>
+            <ul>             
+              <li> <a href="publications-lmop.html?annee=2025">2025</a></li>
+              <li> <a href="publications-lmop.html?annee=2024">2024</a></li>
+              <li><a href="publications-lmop.html?annee=2023">2023</a></li>
+              <li><a href="publications-lmop.html?annee=2022">2022</a></li>
+              <li><a href="publications-lmop.html?annee=2021">2021</a></li>
+              <li><a href="publications-lmop.html?annee=2020">2020</a></li>
+            </ul>
+          </li>
+          <li><a href="manifestation-lmop.html">Manifestations et Jounrées Scientifiques</a></li>
+          <li><a href="actualites-lmop.html">Actualités</a></li>
+        </ul>
+      </div>
+    <div class="navigation">
+      <a href="acceuil-lmop.html">Acceuil &gt; </a> &nbsp; <p>Les équipes de LMOP</p></div>
+      <h1>Les équipes de LMOP</h1></div>
+
+<div class="layout">
+  <!-- Navigation latérale -->
+  <ul class="navbar-left">
+  <li><a href="#direction">Direction</a></li>
+  <li> <a href="#professeurs">Professeurs</a></li>
+  <li><a href="#maîtres-de-conférences">Maîtres de conférences</a></li>
+  <li><a href="#maîtres-assistants">Maîtres Assistants</a></li>
+  <!-- ... -->
+  <li class="dropdown">
+    <a href="#chercheurs">Chercheurs</a>
+    <ul class="submenu">
+      <li><a href="#assistants-contractuels">Assistants contractuels</a></li>
+      <li><a href="#pes">P.E.S (Docteurs)</a></li>
+      <li><a href="#post-doc">Post-Doctorants</a></li>
+    </ul>
+  </li>
+  <li><a href="#doctorants">Doctorants</a></li>  
+  <li><a href="#etudiants-mastère">Etudiants en Mastère</a></li>
+</ul>
+
+  <!-- Contenu principal -->
+  <div class="content">
+    <!-- Section Direction -->
+    <h4 class="section-title anchor-offset" id="direction">Direction</h4>
+    <div class="equipe-container">
+      <div class="cards-container">
+        <div class="card">
+          <div class="profile-pic">
+            <img src="photo personnel\Najeh Thabet Mliki (2).jpeg" alt="Najeh THABET MLIKI">
+          </div>
+          <h3>Najeh Thabet Mliki</h3>
+          <div class="badge">Professeur</div>
+          <p class="institution">Physique des Nanomatériaux</p>
+          <div class="contact-icons">
+            <a href="https://mail.google.com/mail/?view=cm&to=najeh.mliki@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Professeur%20Najeh," 
+            target="_blank" title="Envoyer un email"><i class="fa-regular fa-envelope"></i></a>
+             <span class="show-tel" onclick="togglePhone(this)"> 
+              <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+            </span>
+            <!-- Numéro -->
+             <span class="tel-wrapper" style="display:none;">
+              <a href="tel:+21698957001" class="phone-number">+216 98 957 001</a>
+              <span class="hide-tel" onclick="togglePhone(this)">
+                <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+               </span>
+              </span>
+            <a href="https://www.linkedin.com/in/najeh-thabet-mliki-76757427?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BI4GbR77GQ3aSdyKYThx5Dg%3D%3D"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <a class="cv-link" href="cvs\CV- Najeh Thabet Mliki Mai 2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Professeurs -->
+    <h4 class="section-title anchor-offset" id="professeurs">Professeurs</h4>
+    <div class="equipe-container">
+
+        <div class="cards-container">
+          <div class="card">
+            <div class="profile-pic">
+              <img src="photo personnel/fathi jomni.jpg" alt="Fathi JOMNI">
+            </div>
+            <h3>Fathi Jomni</h3>
+            <div class="badge">Professeur</div>
+            <p class="institution">Physique des Diélectriques</p>
+            <div class="contact-icons">
+              <a href="https://mail.google.com/mail/?view=cm&to=fathi.jomni@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Professeur%20Fathi," target="_blank"><i class="fa-regular fa-envelope"></i></a>
+               <span class="show-tel" onclick="togglePhone(this)"> 
+                <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+              </span>
+              <!-- Numéro -->
+               <span class="tel-wrapper" style="display:none;">
+                <a href="tel:+21698344681" class="phone-number">+216 98 344 681</a>
+                <span class="hide-tel" onclick="togglePhone(this)">
+                  <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+                </span>
+              </span>
+              <a href="https://www.linkedin.com/in/fathi-jomni-2a6373149?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BexgeJmHsR3KjJ%2FgHTi69QQ%3D%3D" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a class="cv-link" href="#" target="_blank"></a>
+        </div>
+          <div class="card">
+            <div class="profile-pic">
+              <img src="photo personnel/rachid belhi.jpg" alt="Rachid Belhi">
+            </div>
+            <h3>Rachid Belhi</h3>
+            <div class="badge">Professeur</div>
+            <p class="institution">Physique des Solides</p>
+            <div class="contact-icons">
+            <a href="https://mail.google.com/mail/?view=cm&to=rbelhi@yahoo.fr&su=Demande%20de%20contact&body=Bonjour%20Professeur%20Rachid," target="_blank"><i class="fa-regular fa-envelope"></i></a> 
+            <span class="show-tel" onclick="togglePhone(this)"> 
+              <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+            </span>
+            <!-- Numéro -->
+             <span class="tel-wrapper" style="display:none;">
+              <a href="tel:+21624326427" class="phone-number">+216 24 326 427</a>
+              <span class="hide-tel" onclick="togglePhone(this)">
+                <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+              </span>
+            </span>
+          <a href="https://www.linkedin.com/in/rachid-belhi-aa308842?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDzkm6oeKQkepU4oAkj%2FEEQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a class="cv-link" href="#" target="_blank"></a>
+    </div>
+   </div>
+    </div>
+    <!-- Section Chercheurs -->
+    <h4 class="section-title anchor-offset" id="maîtres-de-conférences">Maîtres de Conférences</h4>
+    <div class="equipe-container">
+      <div class="cards-container">
+        <div class="card">
+          <div class="profile-pic">
+            <img src="photo personnel/femme-image.png" alt="Basma Askri">
+          </div>
+          <h3>Besma Askri</h3>
+          <div class="badge">Maître de Conférences</div>
+          <p class="institution">Physique des Diélectriques</p>
+          <div class="contact-icons">
+             <a href="https://mail.google.com/mail/?view=cm&to=basmalmop@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Basma," 
+             target="_blank" title="Envoyer un email"><i class="fa-regular fa-envelope"></i></a>
+             <span class="show-tel" onclick="togglePhone(this)"> 
+              <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+            </span>
+            <!-- Numéro -->
+             <span class="tel-wrapper" style="display:none;">
+              <a href="tel:+21697980729" class="phone-number">+216 97 980 729</a>
+              <span class="hide-tel" onclick="togglePhone(this)">
+                <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+              </span>
+            </span>
+            <a href="https://www.linkedin.com/in/besma-askri-a62a01a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKk0xEkawRUOc7XVM03mzrA%3D%3D" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a class="cv-link" href="#" target="_blank"></a>
+        </div>
+        <div class="card">
+            <div class="profile-pic">
+              <img src="photo personnel\riadh fersi.jpg" alt="Riadh Fersi">
+            </div>
+            <h3>Riadh Fersi</h3>
+            <div class="badge">Maître de Conférences</div>
+            <p class="institution"> Physique des Matériaux</p>
+            <div class="contact-icons">
+              <a href="https://mail.google.com/mail/?view=cm&to=riadh.fersi@fst.utm.tn.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Riadh" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/riadh-fersi-2b78311b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bkl8V7LmZSBGpN6R%2FnrQpGA%3D%3D" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <a class="cv-link" href="#" target="_blank">
+              </a>
+            </div>
+          <div class="card">
+            <div class="profile-pic">
+              <img src="photo personnel\kahldi othmen.png" alt="Othmen khaldi">
+            </div>
+            <h3>Othmen khaldi</h3>
+            <div class="badge">Maître de Conférences</div>
+            <p class="institution"> Physique des Solides</p>
+            <div class="contact-icons">
+               <a href="https://mail.google.com/mail/?view=cm&to=othmen.khaldi@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Othmen,"
+               target="_blank" title="Envoyer un email"><i class="fa-regular fa-envelope"></i></a>
+               <span class="show-tel" onclick="togglePhone(this)"> 
+                <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+              </span>
+              <!-- Numéro -->
+               <span class="tel-wrapper" style="display:none;">
+                <a href="tel:+21622379238" class="phone-number">+216 22 379 238</a>
+                <span class="hide-tel" onclick="togglePhone(this)">
+                  <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+                  </span>
+                </span>
+              <a href="https://www.linkedin.com/in/othmen-khaldi-6ab9a489?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEIforsIAS6aqwLEi593jYw%3D%3D" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <a class="cv-link" href="cvs\CV khaldi-Othmen.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+              </i></a>
+            </div>
+          </div>
+    </div>
+   <h4 class="section-title anchor-offset" id="maîtres-assistants">Maîtres Assistants</h4>
+    <div class="equipe-container">
+           <div class="cards-container">
+            <div class="card">
+     <div class="profile-pic">
+       <img src="photo personnel\wajdi belkacem.png" alt="Wajdi Belkacem">
+     </div>
+     <h3>Wajdi Belkacem</h3>
+     <div class="badge">Maître Assistant Habilité</div>
+     <p class="institution"> Physique des Matériaux</p>
+     <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=belkacem.wajdi@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Wajdi" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+         <span class="show-tel" onclick="togglePhone(this)"> 
+          <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+        </span>
+        <!-- Numéro -->
+         <span class="tel-wrapper" style="display:none;">
+          <a href="tel:+21621942055" class="phone-number">+216 21 942 055</a>
+          <span class="hide-tel" onclick="togglePhone(this)">
+            <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+          </span>
+        </span>
+       <a href="https://www.linkedin.com/in/wajdi-belkacem-32802a62?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN8WiBxsxSq%2B1m0GlNqqatw%3D%3D" target="_blank">
+         <i class="fa-brands fa-linkedin-in"></i></a>
+       </div>
+       <a class="cv-link" href="cvs\CV Wajdi Belkacem.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+       </i></a>
+     </div>
+     <div class="card">
+ <div class="profile-pic">
+   <img src="photo personnel\femme-image.png" alt="  Ahlem ROUAHI">
+ </div>
+ <h3> Ahlem Rouahi </h3>
+ <div class="badge">Maître Assistant</div>
+ <p class="institution">Physique des Diélectriques</p>
+ <div class="contact-icons">
+   <a href="https://mail.google.com/mail/?view=cm&to=rouahi_ahlem@yahoo.fr&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Ahlem"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+ </div>
+</div>
+<div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Ikbel Photo.png" alt="Ikbel Mallek-Zouari">
+    </div>
+    <h3>Ikbel Mallek-Zouari</h3>
+    <div class="badge">Maître Assistant</div>
+    <p class="institution">Physique des Matériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=mallek-zouari@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Ikbel"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21695834887" class="phone-number">+216 95 834 887</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+      <a href="https://www.linkedin.com/in/ikbel-mallek-zouari-95807410?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM54b8zMOThujxQQ8%2BFCj4A%3D%3D"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <a class="cv-link" href="cvs\CV ikbel-2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+      </i></a>
+  </div>
+<div class="card">
+  <div class="profile-pic">
+    <img src="photo personnel\homme-image.png" alt=" Mohamed Timoumi">
+  </div>
+  <h3> Mohamed Timoumi</h3>
+  <div class="badge">Maître Assistant</div>
+  <p class="institution">Physique des Fluides</p>
+  <div class="contact-icons">
+    <a href="https://mail.google.com/mail/?view=cm&to=medtimoumi@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Mohamed"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+</div>
+<div class="card">
+<div class="profile-pic">
+  <img src="photo personnel\nasreddine-belkacem.png" alt=" Nasreddine Benkacem">
+</div>
+<h3>Nasreddine Benkacem</h3>
+<div class="badge">Maître Assistant</div>
+<p class="institution"> Physique des Fluides </p>
+<div class="contact-icons">
+  <a href="https://mail.google.com/mail/?view=cm&to=nasreddine.benkacem@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Nasreddine" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+</div>
+<div class="card">
+<div class="profile-pic">
+  <img src="photo personnel/riadh bez.jpeg" alt="Riadh Bez">
+</div>
+<h3>Riadh Bez</h3>
+<div class="badge">Maître Assistant</div>
+<p class="institution"> Physique Quantique </p>
+<div class="contact-icons">
+  <a href="https://mail.google.com/mail/?view=cm&to=riadh.bez@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Riadh" target="_blank"></a><i class="fa-regular fa-envelope"></i></a>
+   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21697420705" class="phone-number">+216 97 420 705</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+  <a href="https://www.linkedin.com/in/riadh-bez-403a54b9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqIdTYNIuQKSpXdebhhllXQ%3D%3D"target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+  <a class="cv-link" href="cvs\cv Riadh Bez.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+  </i></a>
+</div>
+
+<div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\femme-image.png" alt="Salwa Khazzan">
+    </div>
+    <h3>Salwa Khazzan</h3>
+    <div class="badge">Maître Assistant</div>
+    <p class="institution">Physique des Matériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=khazzansalwa@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Salwa" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="card">
+   <div class="profile-pic">
+     <img src="photo personnel\homme-image.png" alt="Sami Jomni">
+   </div>
+   <h3>Sami Jomni</h3>
+   <div class="badge"> Maître Assistant </div>
+   <p class="institution"> Physique des Solides</p>
+<div class="contact-icons">
+          <a href="https://mail.google.com/mail/?view=cm&to=samijemni@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Sami" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+</div>
+</div>
+       <div class="card">
+        <div class="profile-pic">
+          <img src="photo personnel\samia dhahri.jpg" alt="Samia Dhahri">
+        </div>
+        <h3>Samia Dhahri</h3>
+        <div class="badge">Maître Assistant</div>
+        <p class="institution">Nanosciences </p>
+        <div class="contact-icons">
+          <a href="https://mail.google.com/mail/?view=cm&to=samia.dhahri.mes@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Samia" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+             <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21698995658" class="phone-number">+216 98 995 658</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+          <a href="https://www.linkedin.com/in/samia-dhahri-64707840?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8rCO%2F3a2Tpqnw9jEckkaJA%3D%3D" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <a class="cv-link" href="cvs\CV-Samia-DHAHRI_1p.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+          </i></a>
+        </div>
+<div class="card">
+ <div class="profile-pic">
+   <img src="photo personnel\Khlifi Amor.jpeg" alt=" Amor Khlifi">
+ </div>
+ <h3> Amor Khlifi </h3>
+ <div class="badge">Assistant (docteur, agrégé)</div>
+ <p class="institution">Physique des Fluides</p>
+ <div class="contact-icons">
+   <a href="https://mail.google.com/mail/?view=cm&to=lamorkhlifi@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Docteur%20Amor"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+     <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21625515412" class="phone-number">+216 25 515 412</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+      <a href="https://www.linkedin.com/in/amor-khlifi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bg48IEm44QDa1t0p5Pm0Dlw%3D%3D"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+ </div>
+</div>
+  </div>
+  <button id="backToTop" title="Retour en haut">↑</button>
+
+    <!-- Section Doctorants -->
+  <h4 class="section-title anchor-offset" id="chercheurs">Chercheurs</h4>
+  <h5 class="section-title anchor-offset"id="assistants-contractuels"> Assistants Contractuels </h5>
+   <div class="equipe-container" >
+   <div class="cards-container">
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\femme-image.png" alt="Imen Dakhlaoui">
+    </div>
+    <h3>Imen Dahklaoui</h3>
+    <div class="badge">Assistante contractuelle</div>
+    <p class="institution">Physique des Diélectriques</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=daklaouiimen@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Dr%20Imen"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\mariem zenkri.jpg" alt="Mariem Zenkri">
+    </div>
+    <h3>Mariem Zenkri</h3>
+    <div class="badge">Assistante contractuelle</div>
+    <p class="institution">Physique des Solides</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=mariem.zenkri@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Dr%20Mariem"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/mariem-zenkri/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+   </div>
+    </div>
+   </div>
+  <h5 class="section-title anchor-offset"id="pes"> P.E.S</h5>
+   <div class="equipe-container" >
+   <div class="cards-container">
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Amira Cherif.jpeg" alt="Amira Cherif">
+    </div>
+    <h3>Amira Cherif</h3>
+    <div class="badge">P.E.S</div>
+    <p class="institution">Physique des Solides</p>
+   <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=mirouammoura30@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Amira" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+   </div>
+
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Marwa Djebali.jpeg" alt="Marwa Djebali">
+    </div>
+    <h3>Marwa Djebali</h3>
+    <div class="badge">P.E.S Doctorante </div>
+    <p class="institution">Physique des Solides</p>
+    <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=djebali_marwa@yahoo.fr&su=Demande%20de%20contact&body=Bonjour%20Marwa" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+   </div>
+   </div>
+   </div>
+   </div>
+   <h5 class="section-title anchor-offset"id="post-doc"> Post-Doctorants </h5>
+   <div class="equipe-container" >
+   <div class="cards-container">
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\homme-image.png" alt="Alaa Eddine Maayoufi">
+    </div>
+    <h3>Alaa Eddine Maayoufi</h3>
+    <div class="badge">Post-Doc </div>
+    <p class="institution">Physique des Diélectriques</p>
+    <div class="contact-icons">
+         <a href="https://mail.google.com/mail/?view=cm&to= alaaeddine.maayoufi@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Alaa" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+     
+      <a href="https://www.linkedin.com/in/alaa-eddine-maayoufi-898477171/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Aymen-Selmi.png" alt="Aymen Selmi">
+    </div>
+    <h3>Aymen Selmi</h3>
+    <div class="badge">Post-Doc </div>
+    <p class="institution">Physique des Diélectriques</p>
+    <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=eyman_selmi@yahoo.fr&su=Demande%20de%20contact&body=Bonjour%20Aymen" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+   </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\farah chafai.jpg" alt="Farah Chaffai">
+    </div>
+    <h3>Farah Chafai</h3>
+    <div class="badge">Post-Doc </div>
+    <p class="institution">Physique de la Matière Condensée</p>
+    <div class="contact-icons">
+         <a href="https://mail.google.com/mail/?view=cm&to=farahchafai95@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Farah" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/farah-chafai-3801b8174/?originalSubdomain=tn"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\hichem ben Ameur.png" alt="Hichem Ben Ameur">
+    </div>
+    <h3>Hichem Ben Ameur</h3>
+    <div class="badge">Post-Doc </div>
+    <p class="institution">Physique et Chimie des Matériaux</p>
+    <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=hichem.benameur@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Hichem" target="_blank">
+        <i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/hichem-ben-ameur-7197a429b/?trk=people-guest_people_search-card"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Manel-Othman.png" alt="Manel Othman">
+    </div>
+    <h3>Manel Othman</h3>
+    <div class="badge">Post-Doc </div>
+    <p class="institution">Physique de la Matière Condensée</p>
+    <div class="contact-icons">      
+      <a href="https://mail.google.com/mail/?view=cm&to=manel.othman@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Manel"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/manel-othman-a4a8721a9/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+   </div>
+   </div>
+   </div>
+ <!-- Section Doctorants -->
+  <h4 class="section-title anchor-offset" id="doctorants">Doctorants</h4>
+      <div class="equipe-container" >
+   <div class="cards-container">
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\arij.PNG" alt="Arij Ben Lakhdher">
+    </div>
+    <h3>Arij Ben Lakhdher</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Nanophysique et Nanotechnologies</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=arij.benlakhdher@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Arij"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+95834887" class="phone-number">+216 95 834 887</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+      <a href="https://www.linkedin.com/in/arij-benlakhdher-6025411a7/">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <a class="cv-link" href="cvs\Arij Ben Lakhdher CV .pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+      </i></a>
+  </div>
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\emna sassi.png" alt="Emna Sassi">
+    </div>
+    <h3>Emna Sassi</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Physique Quantique</p>
+      <div class="contact-icons">
+    <a href="https://mail.google.com/mail/?view=cm&to=emna.sassi@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Emna"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+  </div>
+<div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Farah Nasraoui.jpeg" alt="Farah Nasraoui">
+    </div>
+    <h3>Farah Nasraoui</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Nanophysique et Nanotechnologies</p>
+      <div class="contact-icons">
+    <a href="https://mail.google.com/mail/?view=cm&to=farah.nasraui@fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Farah"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21692992025" class="phone-number">+216 92 992 025</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+ <a href="https://www.linkedin.com/in/farah-nasraui-b55636207/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+  </div>
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\ghofrane-hajjaji.png" alt="Ghofrane Hajjaji">
+    </div>
+    <h3>Ghofrane Hajjaji</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Nanophysique et Nanotechnologies</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=ghofrane.hajjaji@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Ghofrane"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\maissa-tayeb.jpeg" alt="Mariem Messaada">
+    </div>
+    <h3>Maissa Tayeb</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Physique de la Matière Condensée</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=missatayeb@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Maissa"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21654630686" class="phone-number">+216 54 630 686</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+ <a href="https://www.linkedin.com/in/maissa-tayeb-015230151/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+   </div>
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\mariem messaada.jpeg" alt="Mariem Messaada">
+    </div>
+    <h3>Mariem Messaada</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Nanophysique et Nanotechnologies</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=mariem.messaada@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Mariem"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                   <span class="show-tel" onclick="togglePhone(this)"> 
+  <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+</span>
+<!-- Numéro -->
+ <span class="tel-wrapper" style="display:none;">
+  <a href="tel:+21655394482" class="phone-number">+216 55 394 482</a>
+  <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+ <a href="https://www.linkedin.com/in/mariem-messada-b541a6197"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <a class="cv-link" href="cvs\cv mariem messaada.pdf" target="_blank"><i class="fa-solid fa-file-pdf">
+      </i></a>  
+  </div>
+    </div>
+ <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\samar atig.png" alt="Samar Ben Atig">
+    </div>
+    <h3>Samar Ben Atig</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Physique de la Matière Molle</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=samar.benatig@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Samar"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      </div>
+      <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\syrine ousleti.png" alt="Syrine Oueslati">
+    </div>
+    <h3>Syrine Oueslati</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Nutrition et Biologie Appliquée à la Physique</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=syrineoueslati38@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Syrine"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      </div>
+      <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\femme-image.png" alt="Yosra Rebhi">
+    </div>
+    <h3>Yosra Rebhi</h3>
+    <div class="badge">Doctorante</div>
+    <p class="institution">Physique des Matériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=&su=Demande%20de%20contact&body=Bonjour%20Samar"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+       <span class="show-tel" onclick="togglePhone(this)"> 
+        <i class='fa fa-phone' style="color:rgb(103, 94, 94)" title="Afficher le numéro"></i>
+      </span>
+      <!-- Numéro -->
+       <span class="tel-wrapper" style="display:none;">
+        <a href="tel:+21629640192" class="phone-number">+216 29 640 192</a>
+        <span class="hide-tel" onclick="togglePhone(this)">
+    <i class="fas fa-eye-slash" title="Cacher le numéro"></i>
+  </span>
+</span>
+      <a href="https://www.linkedin.com/in/yosra-rebhi-b60b36194/"target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+      </div>
+      </div>
+  <h4 class="section-title anchor-offset" id="etudiants-mastère">Etudiants en Mastère</h4>
+      <div class="equipe-container" >
+   <div class="cards-container">
+   <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Aboubakar Atikatou.jpeg" alt="Aboubakar Atikatou">
+    </div>
+    <h3>Aboubakar Atikatou</h3>
+    <div class="badge">Ingénieur Biologie</div>
+    <p class="institution">Génie Biologie</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=atikatouaboubakar262@gmail.com&su=Demande%20de%20contact&body=Bonjour%20Aboubakar"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://https://www.linkedin.com/in/aboubakar-atikatou-452a22351/">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+  </div>
+<div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Nourhene Boutaieb.jpeg" alt="Nourhene Boutaieb">
+    </div>
+    <h3>Nourhene Boutaieb</h3>
+    <div class="badge">Etudiante en Mastère</div>
+    <p class="institution">Nanophysique et Nanomatériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=nourhene.boutaieb@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Nourhene"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+  </div>
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\ZERZERI Sarra.jpg" alt="Sarra Zerzri">
+    </div>
+    <h3>Sarra Zerzri</h3>
+    <div class="badge">Etudiante en Mastère</div>
+    <p class="institution">Nanophysique et Nanomatériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=zsarra@icloud.com&su=Demande%20de%20contact&body=Bonjour%20Sarra"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://https://www.linkedin.com/in/sarra-zerzeri-910571338/">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+  </div>
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\sirine ben ghalia.jpg" alt="Sirine Ben Ghalia">
+    </div>
+    <h3>Sirine Ben Ghalia</h3>
+    <div class="badge">Etudiante en Mastère</div>
+    <p class="institution">Nanophysique et Nanomatériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=sirine.benghalia@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20Sirine"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="profile-pic">
+      <img src="photo personnel\Zeineb Lassadi.png" alt="AZeineb Lassadi">
+    </div>
+    <h3>Zeineb Lassadi</h3>
+    <div class="badge">Etudiante en Mastère</div>
+    <p class="institution">Nanophysique et Nanomatériaux</p>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=zeineb.lassadi@etudiant-fst.utm.tn&su=Demande%20de%20contact&body=Bonjour%20"target="_blank"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+  </div>
+
+</div>
+      </div>
+</div>
+</div>
+
+ <footer id="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2>À propos</h2>
+        <p>
+          Laboratoire spécialisé dans la synthèse et la caractérisation de matériaux innovants, en particulier les nanostructures et matériaux intelligents.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="acceuil-lmop.html">Accueil</a></li>
+          <li><a href="presentation-lmop.html">Présentation</a></li>
+          <li><a href="equipe-lmop.html">Équipes</a>
+          <li><a href="projet-lmop.html">Projets</a></li>
+          <li><a href="publications-lmop.html">Publications</a>
+          <li><a href="manifestation-lmop.html">Manifestations et Jounrées Scientifiques</a></li>
+          <li><a href="actualites-lmop.html">Actualités</a></li>
+        </ul>
+    </div>
+      <div class="footer-section">
+        <h2>Liens utiles</h2>
+        <ul>
+          <li><a href="https://fst.rnu.tn" target="_blank">FST</a></li>
+          <li><a href="https://www.utm.rnu.tn" target="_blank">UTM</a></li>
+          <li><a href="https://www.mes.tn" target="_blank">MESRS</a></li>
+          <li><a href="https://www.universites.tn" target="_blank">Portail Universitaire</a></li>          
+          <li><a href="https://cnudst.rnrt.tn" target="_blank">CNDUST</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:laboratoirelmoplres@gmail.com">laboratoirelmoplres@gmail.com</a></p>
+        <p>Tél : +216 98 957 001 </p>
+        <p>Adresse : Université de Tunis El Manar  
+        <br> Faculté des Sciences de Tunis, Département de Physique</p>
+        <p> 2092 Manar II - Tunis, Tunisie </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Laboratoire LMOP — Tous droits réservés.
+    </div>
+  </footer>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="navbar.js"></script>
+<script src="translate.js"></script>
+<script>
+  function togglePhone(el) {
+    const card = el.closest('.card');
+    const telWrapper = card.querySelector('.tel-wrapper');
+    const showIcon = card.querySelector('.show-tel');
+    const phoneIcon = card.querySelector('.phone-icon');
+
+    const isVisible = telWrapper.style.display === 'inline';
+
+    if (isVisible) {
+      telWrapper.style.display = 'none';
+      showIcon.style.display = 'inline';
+      phoneIcon.classList.remove('active');
+    } else {
+      telWrapper.style.display = 'inline';
+      showIcon.style.display = 'none';
+      phoneIcon.classList.add('active');
+    }
+  }
+</script>
+
+<script>
+  const navbarLeft = document.querySelector('.navbar-left');
+  const footer = document.getElementById('footer');
+
+  if (navbarLeft && footer) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navbarLeft.style.visibility = 'hidden';
+        } else {
+          navbarLeft.style.visibility = 'visible';
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1
+    });
+
+    observer.observe(footer);
+  }
+</script>
+
+  <script>
+  // Affichage ou masquage du bouton selon le scroll
+  window.addEventListener('scroll', function() {
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  // Remonter en haut en douceur
+  document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+</body>
+
+</html>

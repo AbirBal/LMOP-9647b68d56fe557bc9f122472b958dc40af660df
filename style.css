@@ -1,0 +1,696 @@
+body {
+  margin: 0;
+  font-family: "Merriweather", serif, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Contenu */
+.content {
+  margin-top: 120px;
+  padding: 20px;
+
+}
+    .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-left: 6px solid #005288;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            color: #005288;
+            margin-top: 0;
+        }
+
+        .container p {
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        
+        
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 700px;
+  margin: auto;
+  text-align: center;
+}
+.mySlides {
+  display:none; /* Cache toutes les slides par défaut */
+  position:sticky; /* Important pour éviter les décalages verticaux */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.mySlides img {
+  width: 100%;
+  height: 700px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 10px 5px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background-color: #2563eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Cartes profil */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 3rem 1.5rem 2rem;
+  width: 300px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+  margin-top: 100px;
+}
+
+.profile-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profile-pic {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px white;
+  background: #fff;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card:hover .profile-pic {
+  box-shadow: 0 0 0 3px #007bff;
+}
+
+h3 {
+  margin-top: 70px;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.badge {
+  background: #007BFF;
+  color: white;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contact-icons a {
+  margin: 0 0.5rem;
+  color: #007BFF;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.contact-icons a:hover {
+  color: #0056b3;
+}
+
+/* Bannière */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: white;
+}
+
+.text-section {
+  max-width: 50%;
+}
+.text-section h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #222;
+}
+.text-section h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #444;
+  margin-bottom: 30px;
+}
+.text-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #1f0cce, #2431ec);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover,
+.btn:focus {
+  background: linear-gradient(135deg, #1f0cce, #010759);
+  outline: none;
+}
+
+.img-section img {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Articles */
+.image-left {
+  float: left;
+  margin-right: 15px;
+  width: 200px;
+}
+
+article {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #002b5c;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Carousel Actualités */
+/* Container principal */
+.carousel-container {
+  margin-top: 2em;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Ligne défilante */
+.news-strip {
+  display: flex;
+  flex-wrap: wrap; /* passage en ligne multiple */
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow-x: hidden;
+}
+
+.news-card {
+  flex: 1 1 300px; /* Permet le redimensionnement fluide */
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 1em;
+  margin: 0.5em;
+  border-left: 4px solid #aaa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.news-strip::-webkit-scrollbar {
+  display: none;
+}
+
+/* Carte d’actualité */
+.news-card:hover {
+  border-left-color: #0055aa;
+}
+.news-card:hover .news-title {
+  color: #0055aa;
+}
+.news-card.read {
+  background-color: #cce5ff;
+  border-left-color: #0055aa;
+}
+
+.news-date {
+  font-size: 0.85em;
+  color: #777;
+}
+
+.news-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.2em 0;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.news-type {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #333;
+}
+
+.news-summary {
+  margin-top: 0.5em;
+  font-size: 0.95em;
+  flex-grow: 1;
+}
+
+.read-more {
+  margin-top: 0.8em;
+  text-align: right;
+  font-weight: bold;
+  color: gray;
+}
+
+/* Bouton voir tout */
+.see-all-button {
+  margin: 2em auto;
+  padding: 0.8em 2em;
+  display: block;
+  background-color: #0055aa;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+.see-all-button:hover {
+  background-color: #003b5c;
+}
+
+
+/* Thématiques */
+.thematic-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.thematic-image {
+  flex: 0 0 800px;
+  height: auto;
+}
+.thematic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.thematic-cards {
+  flex: 1;
+  min-width: 370px;
+}
+.thematic-cards h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card img {
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+  max-width: 120px;
+ margin: 0 auto 10px auto;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Bouton retour en haut */
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Projets */
+/* Section Projets */
+.projets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  width: 100%;
+}
+
+.projet-card {
+  background-color: #fff;
+  border-left: 6px solid #444;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  width: 620px;
+  max-width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.projet-card h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.6rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.projet-card .responsable {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.projet-card .details {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Hover effet */
+.projet-card:hover {
+  border-left-color: #007bff;
+}
+
+.projet-card:hover h3 {
+  color: #007bff;
+}
+
+
+/* Responsive */
+@media (max-width: 1499px) {
+.projets-container {
+    flex-direction: column;
+    align-items: stretch; /* Important pour 100% largeur */
+    gap: 1rem;
+    padding: 0 10px; /* Un petit padding latéral pour respirer */
+  }
+
+  .projet-card {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .thematic-container {
+  display: flex;
+  flex-direction: row; /* Affiche les enfants en ligne */
+  gap: 1rem;
+  padding: 0 1rem;
+  flex-wrap: wrap; /* Permet le retour à la ligne si l'espace manque */
+}
+
+.thematic-image,
+.thematic-cards {
+  flex: 1; /* Prend un espace égal */
+  min-width: 280px; /* Pour éviter d’être trop petit sur mobile */
+}
+
+.thematic-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Cartes en ligne */
+.thematic-cards {
+  display: flex;
+  flex-direction: row; /* Changement important : en ligne */
+  gap: 1rem;
+  flex-wrap: wrap; /* Retour à la ligne si trop large */
+}
+
+/* Chaque carte */
+.thematic-cards .card {
+  flex: 1 1 calc(33.33% - 1rem); /* 3 cartes par ligne */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+}
+
+}
+
+
+/* Pour petits écrans */
+@media (max-width: 768px) {
+   .container {
+           margin: 20px;
+                padding: 20px;
+   }
+   .thematic-container {
+   flex-direction: column;
+ }
+ .thematic-cards {
+   flex-direction: column;
+ }
+ .thematic-cards .card {
+   flex: 1 1 100%;
+ }
+}
+
+
+@media (max-width: 967px) {
+   .banner {
+    flex-direction: row;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .text-section {
+    max-width: 50%;
+    padding: 0;
+  }
+
+  .text-section h1 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .text-section h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .img-section {
+    width: 50%;
+    text-align: center;
+  }
+
+  .img-section img {
+    max-width:100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  .slideshow-container{
+    max-width: 100%;
+}
+.mySlides img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body.menu-open .slideshow-container {
+  margin-top: 250px; /* Ajuste en fonction de la hauteur de ton menu étendu */
+}
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+@media (max-width: 600px) {
+  .see-all-button {
+    width: 90%;
+  }
+  .card img{
+    max-width:100px;
+    max-width: 100px;
+  }
+  
+.news-card {
+   flex: 1 1 100%;
+    width: 95% !important;
+    margin: 0.5em auto;
+   flex: 1 1 100%;
+    width: 95% !important;
+    margin: 0.5em auto;
+  }
+  .news-strip {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+  .news-title {
+    font-size: 1em;
+  }
+
+  .news-summary {
+    font-size: 0.9em;
+  }
+
+  .read-more {
+    font-size: 0.9em;
+  }
+
+  .see-all-button {
+    width: 90%;
+    font-size: 0.95em;
+  }
+  .mySlides img {
+    max-height: 400px;
+}
+
+}
+
+

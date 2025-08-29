@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar-main,
+.navbar-sub {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* ===============================
+   NAVBAR PRINCIPALE
+================================ */
+.navbar-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, hsl(203, 95%, 49%), #010c83);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-main a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.logo-img {
+  height: 30px;
+  width: auto;
+}
+
+.logo-img-lmop {
+  height: 70px;
+  width: auto;
+}
+
+/* ===============================
+   NAVBAR SECONDAIRE
+================================ */
+.navbar-sub {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-sub a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar-sub a:hover {
+  background-color: #21568b;
+  color: white;
+}
+
+
+/* ===============================
+   MENU HAMBURGER
+================================ */
+.menu-toggle-sub {
+  display: none;
+  background-color: transparent;
+  color: black;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ===============================
+   DROPDOWN LANGUE
+================================ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95em;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.dropbtn i {
+  margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  right: 10px;
+ left: auto;
+}
+
+.dropdown-content a {
+  color: #004080;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #003366;
+}
+
+
+/* ===============================
+   NAV LINKS
+================================ */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links li a {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.navbar-links li a:hover {
+  background: linear-gradient(135deg, hsl(203, 69%, 46%), #1f0de7);
+  color: white;
+}
+
+
+/* Sous-menu */
+.navbar-links li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  min-width: 160px;
+  z-index: 1001;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-links li:hover > ul {
+  display: block;
+}
+.navbar-links li ul li:hover > ul {
+  display: block;
+}
+.navbar-links li ul li a {
+  padding: 10px 15px;
+  color: black;
+
+}
+.navbar-links li ul li {
+  position: relative;
+}
+
+.navbar-links li ul li ul {
+  top: 0;
+  left: 100%; /* s'affiche à droite du sous-menu parent */
+  display: none;
+}
+
+.navbar-links li ul li a:hover {
+  background: linear-gradient(135deg, hsl(203, 69%, 46%), #84bae0);
+  color: white;
+}
+.navbar-main, .navbar-sub, .navbar-links {
+  overflow: visible !important;
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 1197px) {
+
+  .navbar-main{
+    flex-direction: row;
+  }
+  .navbar-sub {
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 10px;
+  }
+
+  .menu-toggle-sub {
+    display: block;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-links li a {
+    width: 100%;
+    padding: 12px 20px;
+    color: black;
+  }
+
+  .navbar-links li ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    background: #f9f9f9;
+    width: 100%;
+  }
+.navbar-links li.open > ul {
+  display: block;
+}
+.navbar-links li > a::after {
+  float: right;
+}
+  .logo-img {
+    height: 25px;
+  }
+
+  .logo-img-lmop {
+    height: 50px;
+    width: auto;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: #f0f0f0;
+  }
+}

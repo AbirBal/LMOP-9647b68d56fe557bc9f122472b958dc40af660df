@@ -1,0 +1,155 @@
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  background-color: #f5f9fc;
+}
+
+.content {
+  margin: 150px 20px 40px 100px;
+}
+
+.navigation {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(32, 32, 222);
+}
+
+.navigation a:hover {
+  color: rgb(17, 175, 237);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #133b5c;
+}
+
+.navigation p {
+  font-size: 1rem;
+  color: #133b5c;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-left: 5px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border-left: 5px solid #005a9c;
+}
+
+.news-card:hover .news-title {
+  color: #005a9c;
+}
+
+.news-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #111212;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.news-date {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.news-type {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 1em;
+  color: #333;
+}
+
+.news-card.active {
+  border-left: 5px solid #005a9c;
+}
+
+.news-card.active .news-title {
+  color: #005a9c;
+}
+
+.pagination-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.active-page {
+  background-color: #0056b3;
+}
+ #backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+@media (max-width: 768px) {
+  .content {
+    margin: 20px;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

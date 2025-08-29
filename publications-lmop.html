@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications Scientifiques | Laboratoire Matériaux, Organisation et Propriétés </title>  
+  <link rel="icon" sizes="16x16" type="image/png" href="image\lmop-icon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vos styles existants -->
+  <link rel="stylesheet" href="styleNavbar.css">
+  <link rel="stylesheet" href="styleFooter.css">
+  <link rel="stylesheet" href="stylePublication.css">
+  <!-- DataTables CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+  
+  <style src="stylePublication.css"></style>
+  <style src="styleNavbar.css"></style>
+  <style src="styleFooter.css"></style>
+<!-- Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', // Langue par défaut
+        includedLanguages: 'fr,en,ar', // Langues disponibles : Français, Anglais, Arabe
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+
+</head>
+<body>
+
+   <div class="navbar-main">
+        <div>
+                    <a href="https://utm.rnu.tn/utm/fr/" target="_blank"><img src="image\Logo_UTM.png" alt="Logo" class="logo-img"></a>
+                    <a href="https://fst.rnu.tn/fr" target="_blank"><img src="image\Logo_FST.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <ul>
+          <!--<a href="contact.html">Contact</a> 
+          <a href="login.html">Se connecter</a> -->
+          <div class="navbar-lang dropdown">
+            <i class="fas fa-globe"></i> Langue ▾
+            <div class="dropdown-content">
+              <div id="google_translate_element"></div> <!-- Ajout du widget de traduction -->
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="navbar-sub">
+        <div>
+          <img src="image/lmop.png" alt="Logo" class="logo-img-lmop" onclick="window.location.href='acceuil-lmop.html'">
+        </div>
+        <!-- Bouton Hamburger -->
+        <button class="menu-toggle-sub">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+          <li><a href="acceuil-lmop.html">Accueil</a></li>
+          <li><a href="presentation-lmop.html">Présentation</a></li>
+          <li><a href="equipe-lmop.html">Équipes</a>
+            <ul>
+              <li><a href="equipe-lmop.html#direction">Direction</a></li>
+              <li><a href="equipe-lmop.html#professeurs">Professeurs</a></li>
+              <li><a href="equipe-lmop.html#maîtres-de-conférences">Maîtres de conférences</a></li>
+              <li><a href="equipe-lmop.html#maîtres-assistants">Maîtres Assistants</a></li>
+              <li><a href="equipe-lmop.html#chercheurs">Chercheurs</a>
+              <ul >
+                <li><a href="equipe-lmop.html#assistants-contractuels">Assistants contractuels</a></li>
+                <li><a href="equipe-lmop.html#pes">P.E.S (Docteurs)</a></li>
+                <li><a href="equipe-lmop.html#post-doc">Post-Doctorants</a></li>
+              </ul>
+            </li>
+              <li><a href="equipe-lmop.html#doctorants">Doctorants</a></li>
+              <li><a href="equipe-lmop.html#etudiants-mastère">Etudiants en Mastère</a></li>
+            </ul>
+          </li>
+          <li><a href="projet-lmop.html">Projets</a></li>
+          <li><a href="publications-lmop.html">Publications</a>
+            <ul>             
+              <li> <a href="publications-lmop.html?annee=2025">2025</a></li>
+              <li> <a href="publications-lmop.html?annee=2024">2024</a></li>
+              <li><a href="publications-lmop.html?annee=2023">2023</a></li>
+              <li><a href="publications-lmop.html?annee=2022">2022</a></li>
+              <li><a href="publications-lmop.html?annee=2021">2021</a></li>
+              <li><a href="publications-lmop.html?annee=2020">2020</a></li>
+            </ul>
+          </li>
+          <li><a href="manifestation-lmop.html">Manifestations et Jounrées Scientifiques</a></li>
+          <li><a href="actualites-lmop.html">Actualités</a></li>
+        </ul>
+      </div>
+  <main>
+       <div class="navigation">
+       <a href="acceuil-lmop.html">Acceuil &gt; </a> &nbsp; <p>Liste des Articles de Recherche </p></div>
+       <h1>Liste des Articles de Recherche</h1>
+    <table id="articlesTable" class="display">
+      <thead>
+        <tr>
+          <th>Auteur</th>
+          <th>Titre</th>
+          <th>Année</th>
+          <th>Revue</th>
+          <th>DOI</th>
+          <th>Lien</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr>
+        <td>Mallek-Zouari I., Kaddar Y., Ben Taazayet W., Mounkachi O., Hlil E.K., Thabet-Mliki  N. and El Moutaouakil A.</td>
+        <td>First-Principles Investigation of Structural, Electronic, and Magnetic Properties of BiFeO3 and Bi2Fe4O9 Nanostructure</td>
+        <td>2025</td>
+        <td>International Journal of Molecular Sciences, 26 (10), 4671</td>
+        <td>10.3390/ijms26104671</td>
+        <td><a href="https://www.mdpi.com/1422-0067/26/10/4671"target="_blank">Lien</a></td>
+    </tr>
+    <tr>
+        <td>Fersi R.; Reinhold A.; Pereira A.; Dalia A.P.</td>
+        <td>Analysis of Microstructural, Electronic and Magnetic Properties of Nanocrystalline Compound Sm2ZrCo16: Effects of Annealing Temperature and Role of Intergranular Exchange Coupling</td>
+        <td>2025</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2025.173085</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105003214778&doi=10.1016%2fj.jmmm.2025.173085&partnerID=40&md5=3c84f0bd3b6179c5fe64c56513e558ff"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Zidi Y.; Khaldi O.; Patru R.E.; Leonat L.N.; Enculescu M.; Toma V.; Stepanova A.; Ben Younes R.; Galca A.C.</td>
+        <td>Experimental and theoretical perspective on band gap modulation in Sr2+ modified BaTiO3 capacitors</td>
+        <td>2025</td>
+        <td>Ceramics International</td>
+        <td>10.1016/j.ceramint.2025.01.591</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85217408821&doi=10.1016%2fj.ceramint.2025.01.591&partnerID=40&md5=4f33a9bc52ff85b5df9632f7abfda4ee"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mallek-Zouari I.; Ben Taazayet W.; Grenèche J.-M.; Bessais L.; Mliki N.T.</td>
+        <td>Mössbauer spectrometry for investigating the magnetic properties of Bi2Fe4O9 bismuth ferrite nanostructures</td>
+        <td>2025</td>
+        <td>Materials Chemistry and Physics</td>
+        <td>10.1016/j.matchemphys.2024.130266</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85211739453&doi=10.1016%2fj.matchemphys.2024.130266&partnerID=40&md5=3d6c3cbb2d3a1c54f25987c9f843c132"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Microstructural, magnetic and electronic analysis of nanocrystalline Zr6Ni23 powders: Experimental study and theoretical approach</td>
+        <td>2025</td>
+        <td>Physica B: Condensed Matter</td>
+        <td>10.1016/j.physb.2025.416936</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85215846674&doi=10.1016%2fj.physb.2025.416936&partnerID=40&md5=029db4faf46a60a9ec2f5b0a14d3277e"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Hammami Z.; Selmi A.; Maayoufi A.E.; Altalhi T.; Touil S.; Mezni A.</td>
+        <td>Structural, optical, and dielectric properties of copper-doped ZnO nanorods prepared by modified sol-gel process</td>
+        <td>2025</td>
+        <td>Journal of Sol-Gel Science and Technology</td>
+        <td>10.1007/s10971-025-06717-5</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-86000475092&doi=10.1007%2fs10971-025-06717-5&partnerID=40&md5=bae2203681aa065ce81d190dc66fbbe6"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Bouhmouche A.; Moubah R.; Elkhouad S.; Yamkane Z.; Mliki N.T.</td>
+        <td>Pressure effects on the electronic, optical, and thermodynamic properties in van der waals multiferroic NiI2</td>
+        <td>2025</td>
+        <td>Materials Science in Semiconductor Processing</td>
+        <td>10.1016/j.mssp.2025.109515</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105001124056&doi=10.1016%2fj.mssp.2025.109515&partnerID=40&md5=0c1d5919ac725b7576d4a53645193db0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Sassi E.; Maayoufi A.E.; Dkhil B.; Jomni F.</td>
+        <td>Enhancing Structural, electrical and energy storage performance of lead-free BaxSr1−xTiO3 ceramics</td>
+        <td>2025</td>
+        <td>Ceramics International</td>
+        <td>10.1016/j.ceramint.2025.04.247</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105004823422&doi=10.1016%2fj.ceramint.2025.04.247&partnerID=40&md5=eeb943c93806123e586a9876b9250001"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chakchouk N.; Drissi N.; Karoui K.; Hajlaoui F.; Jomni F.; Ben Rhaiem A.</td>
+        <td>Electrical and optical properties of Li3NbO4 material</td>
+        <td>2025</td>
+        <td>Optical Materials</td>
+        <td>10.1016/j.optmat.2025.116805</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85217760863&doi=10.1016%2fj.optmat.2025.116805&partnerID=40&md5=f5c5c162bea80f7ef851f395606a246b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Nasser Alsubaie M.; Saad Alabbad S.; Alrashidi W.; Abdullah Alomair N.; Kochkar H.; Berhault G.; Jomni F.; Ercan I.</td>
+        <td>Ferroelectric-assisted enhancement of the photocatalytic activity of g-C3N4/TiO2 nanotubes heterojunctions through the addition of strontium</td>
+        <td>2024</td>
+        <td>Journal of Photochemistry and Photobiology A: Chemistry</td>
+        <td>10.1016/j.jphotochem.2024.115699</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85191714062&doi=10.1016%2fj.jphotochem.2024.115699&partnerID=40&md5=f3c638b20e868c740946c284a1edfe68"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Microstructural and Magnetic Characteristics of Nanocrystalline Sm4ZrFe33 Alloys</td>
+        <td>2024</td>
+        <td>Physica Status Solidi (A) Applications and Materials Science</td>
+        <td>10.1002/pssa.202400516</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85202214892&doi=10.1002%2fpssa.202400516&partnerID=40&md5=e0d02367e6a3160850fe3345381f06f7"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mouhali W.; Salhi A.; Lehner T.; Cambon C.</td>
+        <td>Waves and non-propagating mode in stratified and rotating magnetohydrodynamic turbulence</td>
+        <td>2024</td>
+        <td>Physics of Fluids</td>
+        <td>10.1063/5.0243689</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85212538099&doi=10.1063%2f5.0243689&partnerID=40&md5=5cbdd72c229865c7b6f5f54661dd0013"target="_blank">Lien</a></td>
+    </tr>
+     <tr>
+        <td> Salhi A.; Khlifi A.; Marino R.; Feraco F.; Foldes R.; Cambon C. </td>
+        <td>Waves and non-propagating modes in stratified MHD turbulence subject to a weak mean magnetic field</td>
+        <td>2024</td>
+        <td>Journal of Fluid Mechanics</td>
+        <td>10.1017/jfm.2024.1100</td>
+        <td><a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/waves-and-nonpropagating-modes-in-stratified-mhd-turbulence-subject-to-a-weak-mean-magnetic-field/D9C696A5ADA2848F131795B10D8A4DBF"target="_blank">Lien </a></td>
+    </tr>
+    
+    <tr>
+        <td>Laghfiri C.; Rhrissi I.; Arba Y.; Bouhmouche A.; Lakhlifi H.; Mehdaoui B.; Mliki N.; Saeedi A.M.; Lassri H.; Moubah R.</td>
+        <td>Structural, linear and nonlinear optical properties of Pb(Mg1/3Nb2/3)O3-PbTiO3 nanoparticles</td>
+        <td>2024</td>
+        <td>Chemical Papers</td>
+        <td>10.1007/s11696-024-03426-1</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85189373532&doi=10.1007%2fs11696-024-03426-1&partnerID=40&md5=7ce16b2d1fec574183a0d1212a4a4bd3"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Zemzemi M.; Ferhi H.; Jomni F.</td>
+        <td>Relationship Between Electrode Material, Valence Band Offset, and Nonlinearity in the Resistive Switching Behavior of Au/HfO2/M (M = TiN, W, Pt, or AlCu) Metal–Insulator–Metal Devices: Correlation Between Experimental and DFT Calculations</td>
+        <td>2024</td>
+        <td>Journal of Electronic Materials</td>
+        <td>10.1007/s11664-024-11206-6</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85196021477&doi=10.1007%2fs11664-024-11206-6&partnerID=40&md5=536d2b582d27291cc6b3b55bca9d3e9a"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chakchouk N.; Karoui K.; Drissi N.; Jomni F.; Ben Rhaiem A.</td>
+        <td>An investigation of structural, thermal, and electrical conductivity properties for understanding transport mechanisms of CuWO4 and α-CuMoO4 compounds</td>
+        <td>2024</td>
+        <td>RSC Advances</td>
+        <td>10.1039/d3ra07453f</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85182394542&doi=10.1039%2fd3ra07453f&partnerID=40&md5=ba56a193a26be53cb067d6b21784da0b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Bez R.; Maayoufi A.E.; Bouhmouche A.; Moubah R.; Mliki N.T.</td>
+        <td>Structural, dielectric, optical and electronic properties of NdFeO3 : experimental and computational study</td>
+        <td>2024</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-024-13159-2</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85198639573&doi=10.1007%2fs10854-024-13159-2&partnerID=40&md5=32afde6e97d264390518bb407a2bba5c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Souemti A.; Selmi A.; Martín I.R.; Lozano-Gorrín A.D.; Megriche A.</td>
+        <td>Enhancing luminescence and dielectric properties in ceramics: rare-earth modification of KMg4(PO4)3-based materials</td>
+        <td>2024</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-024-12213-3</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85185881956&doi=10.1007%2fs10854-024-12213-3&partnerID=40&md5=1226e8c13b4b9e213d8c4cb46b80e8bb"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Greneche J.-M.; Mliki N.; Bessais L.</td>
+        <td>Magnetic phase transition and critical behavior in (Pr,Sm)2Fe17 compounds: A comprehensive study using macroscopic and local experimental approaches</td>
+        <td>2024</td>
+        <td>Materials Research Bulletin</td>
+        <td>10.1016/j.materresbull.2024.113022</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85201015185&doi=10.1016%2fj.materresbull.2024.113022&partnerID=40&md5=098b9376ff88e87583c68befc339dd6f"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Apolo Palarizato D.</td>
+        <td>Exploration of the Magnetic Properties of ZrCo:Co Bilayer Films: Effects of the Thickness of the Co Layer on the Anisotropy and Magnetic Interaction Parameters</td>
+        <td>2024</td>
+        <td>Physica Status Solidi (A) Applications and Materials Science</td>
+        <td>10.1002/pssa.202400103</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85190686110&doi=10.1002%2fpssa.202400103&partnerID=40&md5=6d5a4825b04ea61aa33cebd579b8b71d"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Alaya S.; Ayeb H.; Samet L.; Jomni F.; Soltani T.</td>
+        <td>Impact of Co-doped TiO2 nanoparticles on the physical properties of a nematic liquid crystal</td>
+        <td>2024</td>
+        <td>Phase Transitions</td>
+        <td>10.1080/01411594.2024.2313736</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85186193889&doi=10.1080%2f01411594.2024.2313736&partnerID=40&md5=3aebad501ee4a5fbddd2070de5233923"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Nehdi K.; Larbi T.; Khaldi O.; Doll K.; Amlouk M.</td>
+        <td>DFT investigation on the design and optimization of icosahedral and octahedral beryllium nitride (Be3N2)x fullerene analogue. A comparative study with isosymmetry carbon fullerene</td>
+        <td>2024</td>
+        <td>Chemical Physics</td>
+        <td>10.1016/j.chemphys.2024.112398</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200225150&doi=10.1016%2fj.chemphys.2024.112398&partnerID=40&md5=c96b1bf21d647452e2184b4bccae85a9"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chafai F.; Bouzidi W.; Fersi R.; Patout L.; Descoins M.; Hoummada K.; Bessais L.; Charaï A.; Thabet Mliki N.</td>
+        <td>Structural, morphological, and magnetic properties of carbon-modified nanocrystalline Pr5Co19 alloys</td>
+        <td>2024</td>
+        <td>Solid State Communications</td>
+        <td>10.1016/j.ssc.2024.115668</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85202743544&doi=10.1016%2fj.ssc.2024.115668&partnerID=40&md5=eab901c76de007f03d1e25fa7849246c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Gassoumi A.; Bouarissa N.</td>
+        <td>Energy Gaps, Optical Transitions, and Exciton Properties of ZnSe at High Pressures</td>
+        <td>2024</td>
+        <td>ECS Journal of Solid State Science and Technology</td>
+        <td>10.1149/2162-8777/ad2863</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85185836413&doi=10.1149%2f2162-8777%2fad2863&partnerID=40&md5=f935f3f027c13bcfe681488235ae1536"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Zidi Y.; Khaldi O.</td>
+        <td>Physical properties and mechanical stability of AlCu:XO2 (X=Hf, Zr) alloys from density functional theory (DFT): Prediction and analysis for photocatalysis and electronic devices applications</td>
+        <td>2024</td>
+        <td>Optik</td>
+        <td>10.1016/j.ijleo.2024.171729</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85188065752&doi=10.1016%2fj.ijleo.2024.171729&partnerID=40&md5=270e978d00f35db5a3249254b3f1bd12"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jbeli R.; Dabaki Y.; Ahmed N.E.; Zaied I.; Askri B.; Saadallah F.; Amlouk M.</td>
+        <td>Synthesis and physical investigation of Al doped La2O3 thin films for wettability applications</td>
+        <td>2024</td>
+        <td>Environmental Progress and Sustainable Energy</td>
+        <td>10.1002/ep.14354</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85183614071&doi=10.1002%2fep.14354&partnerID=40&md5=656f20945070714c5cc8cbc0fcb90aef"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mrabet C.; Jaballah R.; Mahdhi N.; Boukhachem A.; Amlouk M.</td>
+        <td>Structural, optical, photoluminescence and sunlight photocatalytic properties of sprayed NiO-ZnO nanocomposite thin films</td>
+        <td>2024</td>
+        <td>Materials Science and Engineering: B</td>
+        <td>10.1016/j.mseb.2023.117130</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85180536630&doi=10.1016%2fj.mseb.2023.117130&partnerID=40&md5=d7b01335241687ae353c159fd698c773"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Saadi H.; Khaldi O.; Pina J.; Costa T.; Seixas de Melo J.S.; Vilarinho P.; Benzarti Z.</td>
+        <td>Effect of Co Doping on the Physical Properties and Organic Pollutant Photodegradation Efficiency of ZnO Nanoparticles for Environmental Applications</td>
+        <td>2024</td>
+        <td>Nanomaterials</td>
+        <td>10.3390/nano14010122</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85181968474&doi=10.3390%2fnano14010122&partnerID=40&md5=e6a780c4b91bdeec6fd7a1684d29a079"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Belkacem W.; Belhi R.; Mliki N.T.</td>
+        <td>Enhancement of perpendicular magnetic anisotropy in NiMnSn/Co Heterostructures: Insights from PMOKE measurements</td>
+        <td>2024</td>
+        <td>Solid State Communications</td>
+        <td>10.1016/j.ssc.2024.115653</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85201388722&doi=10.1016%2fj.ssc.2024.115653&partnerID=40&md5=e91a58a38f24ca2d9f56247609acc3ff"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Krichen M.; Drissi N.; Karoui K.; Jomni F.</td>
+        <td>Structural, optical and electrical properties of NiMO4 (M=W and Mo)</td>
+        <td>2024</td>
+        <td>Journal of Molecular Structure</td>
+        <td>10.1016/j.molstruc.2023.137116</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85182219326&doi=10.1016%2fj.molstruc.2023.137116&partnerID=40&md5=4a186e9b57db2eed50881e99e3a2a9bc"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Ameur H.; Zouari I.M.; Dhahri S.; Bessais L.; Patout L.; Mliki N.T.</td>
+        <td>Synthesis and multifunctional properties of MnxCo1-xFe2O4 nanoparticles via solvothermal route</td>
+        <td>2024</td>
+        <td>Ceramics International</td>
+        <td>10.1016/j.ceramint.2024.06.342</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85197080591&doi=10.1016%2fj.ceramint.2024.06.342&partnerID=40&md5=85e9ca2f232ea51b7ab7b0e55093dbf0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Soli I.; Zemzemi M.; Agoubi B.; Khaldi O.; Khirouni K.</td>
+        <td>Computational Modeling of Electronic, Valence Band Offset, and Thermoelectric Transport Properties of SrTiO3/LaCrO3 Heterostructures</td>
+        <td>2024</td>
+        <td>Journal of Electronic Materials</td>
+        <td>10.1007/s11664-024-11374-5</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85203721448&doi=10.1007%2fs11664-024-11374-5&partnerID=40&md5=13f0f2f27e8b462d34c38ca9142bb6a0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Malek W.; Bouzidi M.; Chaaben N.; Belgacem W.; Alshammari A.S.; Mohamed M.; Mballo A.; Vuong P.; Salvestrini J.P.; Bouazizi A.; Shakfa M.K.</td>
+        <td>Controlled nano-roughening of the GaN surface by post-growth thermal annealing</td>
+        <td>2024</td>
+        <td>Applied Surface Science</td>
+        <td>10.1016/j.apsusc.2024.159668</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85185268509&doi=10.1016%2fj.apsusc.2024.159668&partnerID=40&md5=8e7a1e9190b5e8278e1f146f1d37fdb2"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dhahri S.; Shall H.; Thabet Mliki N.</td>
+        <td>Towards sustainable Nanomaterials: Exploring green synthesis methods and their impact on electrical properties</td>
+        <td>2024</td>
+        <td>Inorganic Chemistry Communications</td>
+        <td>10.1016/j.inoche.2024.112872</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200648182&doi=10.1016%2fj.inoche.2024.112872&partnerID=40&md5=cd9c765e67007101026d9259c20d3e51"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dhahri S.; Marlière C.</td>
+        <td>Atomic Force Microsocopy: Key Unconventional Approach for Bacterial Nanotubes Characterization In Vivo</td>
+        <td>2024</td>
+        <td>ACS Omega</td>
+        <td>10.1021/acsomega.4c06349</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85209543049&doi=10.1021%2facsomega.4c06349&partnerID=40&md5=857cece5e2cc5cf1a61820103379f493"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Charfeddine S.; Souid I.; Jaballah H.; Bessais L.; Korchef A.</td>
+        <td>Influence of iron substitution on structural, magnetic, and magnetocaloric properties of Tb2Fe17−xAlx compounds synthesized by arc melting</td>
+        <td>2024</td>
+        <td>Inorganic Chemistry Communications</td>
+        <td>10.1016/j.inoche.2023.111664</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85184080125&doi=10.1016%2fj.inoche.2023.111664&partnerID=40&md5=f89af0c100b7b491f8295ad31b044cc5"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Hajer S.; Khaldi O.; Dahri A.; Abdelmoula N.; Hammami I.; Pedro Fernandes Graça M.; Benzarti Z.</td>
+        <td>Influence of (Co+Al) co−doping on structural, micro-structural, optical and electrical properties of nanostructured zinc oxide</td>
+        <td>2024</td>
+        <td>Ceramics International</td>
+        <td>10.1016/j.ceramint.2024.08.264</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85201632805&doi=10.1016%2fj.ceramint.2024.08.264&partnerID=40&md5=d7d29399346e2429b8ae0c6d8b2dddba"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chérif S.F.; Dridi W.; Chérif A.; Nasr S.; Ferhi M.; Zid M.F.</td>
+        <td>Ac conductivity and modulus behavior of K0.12Na0.54Ag0.34Nb4AsO13 compound</td>
+        <td>2023</td>
+        <td>Solid State Sciences</td>
+        <td>10.1016/j.solidstatesciences.2022.107106</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85145165497&doi=10.1016%2fj.solidstatesciences.2022.107106&partnerID=40&md5=28f0a3060a4e4add3fd665d6d48c0324"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Microstructure and magnetic properties of NdFe/MgO(001) thin films elaborated by evaporation from Nd3Fe29 nanocrystalline powder</td>
+        <td>2023</td>
+        <td>Applied Physics A: Materials Science and Processing</td>
+        <td>10.1007/s00339-023-07064-4</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85174303804&doi=10.1007%2fs00339-023-07064-4&partnerID=40&md5=e7480dcfc17a2be4aa77624bd7886e70"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Saadi H.; Khaldi O.; Larbi T.; Benzarti Z.</td>
+        <td>Correlations between structural, dielectric properties, and ab initio calculations in Co-doped ZnO nanoparticles: effect of Co concentration</td>
+        <td>2023</td>
+        <td>Applied Physics A: Materials Science and Processing</td>
+        <td>10.1007/s00339-023-07126-7</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85177060959&doi=10.1007%2fs00339-023-07126-7&partnerID=40&md5=4b7b4a2eb0eb75ff972aafce774b3901"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Saadi M.; Dakhlaoui I.; Hajlaoui F.; Drissi N.; Zighrioui M.; Jomni F.; Audebrand N.; Cordier M.; Karim K.</td>
+        <td>Bromination of organic spacer impacts on the structural arrangement, phase transitions, and optical and electrical properties of a hybrid halide compound:[(CH3)3N(CH2)3Br]2PdBr4</td>
+        <td>2023</td>
+        <td>New Journal of Chemistry</td>
+        <td>10.1039/d3nj04819e</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85179173490&doi=10.1039%2fd3nj04819e&partnerID=40&md5=9cef885beecda0f429afefef7253db33"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Patout L.; Chafai F.; Bouzidi W.; Descoins M.; Hoummada K.; Bessais L.; Mliki N.; Charaï A.</td>
+        <td>Polymorphism and intergrowth structures in the nanostructured Pr–Co system: Pr2Co7 and Pr5Co19</td>
+        <td>2023</td>
+        <td>Materials Characterization</td>
+        <td>10.1016/j.matchar.2022.112621</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85144819083&doi=10.1016%2fj.matchar.2022.112621&partnerID=40&md5=bbf99db9a71e7033500b735e27c32912"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Salah B.B.; Hajlaoui F.; Karoui K.; Audebrand N.; Roisnel T.; Freslon S.; Zouari N.; Jomni F.</td>
+        <td>Exploration of new chiral hybrid semiconducting palladium halide complexes: [(R)/(S)-2-Methylpiperazinediium]PdCl4</td>
+        <td>2023</td>
+        <td>Materials Research Bulletin</td>
+        <td>10.1016/j.materresbull.2023.112251</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85151517585&doi=10.1016%2fj.materresbull.2023.112251&partnerID=40&md5=54b3f8649285a006718e09eb8a05f27f"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Salhi A.; Cambon C.</td>
+        <td>Magneto-gravity-elliptic instability</td>
+        <td>2023</td>
+        <td>Journal of Fluid Mechanics</td>
+        <td>10.1017/jfm.2023.300</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85160719573&doi=10.1017%2fjfm.2023.300&partnerID=40&md5=9092c9a5eca09832f5a0cb9f8ad90dd7"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mallek-Zouari I.; Ben Taazayet W.; Grenèche J.-M.; Bessais L.; Dkhil B.; Thabet Mliki N.</td>
+        <td>Field-induced spin cycloidal modulation to antiferromagnetic transition and possible flexomagnetic effect in BiFeO3 nanoparticles</td>
+        <td>2023</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2022.167944</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85141500963&doi=10.1016%2fj.jallcom.2022.167944&partnerID=40&md5=9d8af1d95f4e3195c6f30f6a888f950b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Ferhi H.; Larbi T.; Jomni F.; Ben Younes R.</td>
+        <td>Dielectric response of high-κ hafnium oxide under finite electric field: nonlinearities from ab initio and experimental points of view</td>
+        <td>2023</td>
+        <td>Physical Chemistry Chemical Physics</td>
+        <td>10.1039/d3cp01552a</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85168786739&doi=10.1039%2fd3cp01552a&partnerID=40&md5=ce12dee6c18dbecc8c24dbc2c07cc5c8"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Horcheni J.; Nouri K.; Jaballah H.; Bessais L.; Dhahri E.; Jemmali M.</td>
+        <td>Magnetocaloric Properties and Critical Behaviour of the Sm2Ni17 Compound</td>
+        <td>2023</td>
+        <td>Applied Sciences (Switzerland)</td>
+        <td>10.3390/app13116575</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85161665725&doi=10.3390%2fapp13116575&partnerID=40&md5=9296be3ccbbf64432de57267321b3b77"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Belkacem W.; Belhi R.; Thabet Mliki N.; Bouazizi A.</td>
+        <td>Exchange Bias and Vertical Magnetic Shift on Co−CoO Thin Films</td>
+        <td>2023</td>
+        <td>Crystal Research and Technology</td>
+        <td>10.1002/crat.202300059</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85163349244&doi=10.1002%2fcrat.202300059&partnerID=40&md5=7df3bdd818d77f34a180881f3e9f0462"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Alomair N.A.; Al-Aqeel N.S.; Alabbad S.S.; Kochkar H.; Berhault G.; Younas M.; Jomni F.; Hamdi R.; Ercan I.</td>
+        <td>The Role of the Ferroelectric Polarization in the Enhancement of the Photocatalytic Response of Copper-Doped Graphene Oxide-TiO2 Nanotubes through the Addition of Strontium</td>
+        <td>2023</td>
+        <td>ACS Omega</td>
+        <td>10.1021/acsomega.2c06717</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85149036378&doi=10.1021%2facsomega.2c06717&partnerID=40&md5=bf4b9744fef2e9954c66275fad3e1987"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Charbonnier V.; Bessais L.; Mliki N.</td>
+        <td>Investigation of spin reorientation and magnetocaloric behavior in PrCo5−xCux compounds</td>
+        <td>2023</td>
+        <td>Materials Research Bulletin</td>
+        <td>10.1016/j.materresbull.2023.112326</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85156232748&doi=10.1016%2fj.materresbull.2023.112326&partnerID=40&md5=14832bb6d7d06a1209c08ba49b053e70"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Taazayet W.; Mallek Zouari I.; Dkhil B.; Thabet Mliki N.</td>
+        <td>Optical and dielectric properties of ultra-fine Mn doped BiFeO3 nanoparticles</td>
+        <td>2023</td>
+        <td>Inorganic Chemistry Communications</td>
+        <td>10.1016/j.inoche.2023.110951</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85163212351&doi=10.1016%2fj.inoche.2023.110951&partnerID=40&md5=b1a505cd371034db755b6f19f299c541"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Othman M.; Mallek-Zouari I.; Akrout H.; Mliki N.T.</td>
+        <td>Synthesis and properties of ultra-small BiFeO3 nanoparticles doped with cobalt</td>
+        <td>2023</td>
+        <td>Ceramics International</td>
+        <td>10.1016/j.ceramint.2022.11.245</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85143875295&doi=10.1016%2fj.ceramint.2022.11.245&partnerID=40&md5=6c7651586b2f323a6315fa1d27694521"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>El Harafi O.; Lassri H.; Mliki N.; Moubah R.</td>
+        <td>Comparative studies of the structural and optical properties of BiI3 and PbI2 iodide-based semiconductors</td>
+        <td>2023</td>
+        <td>Phase Transitions</td>
+        <td>10.1080/01411594.2023.2202322</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85153503785&doi=10.1080%2f01411594.2023.2202322&partnerID=40&md5=f1f8423086dcf283fa515e6e8ecc6e84"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Taazayet W.; Mallek Zouari I.; Thabet Mliki N.</td>
+        <td>Crystal field modification via rare earth ions (Dy, Nd) incorporation on BiFeO3 fine nanoparticles</td>
+        <td>2023</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-023-11487-3</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85175968832&doi=10.1007%2fs10854-023-11487-3&partnerID=40&md5=1486a81067f2b813c1709cbb5acd7894"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Chafai F.; Moubah R.; Lassri H.; Mliki N.; Bessais L.</td>
+        <td>Microstructure and magnetic properties in nanocrystalline Pr2Co7-xFex alloys: Experimental and theoretical study</td>
+        <td>2023</td>
+        <td>Physica B: Condensed Matter</td>
+        <td>10.1016/j.physb.2023.415411</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85174215819&doi=10.1016%2fj.physb.2023.415411&partnerID=40&md5=ff70b682f8a5337a7bf426fa12fb2c86"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dardouri S.; Tunçbilek E.; Khaldi O.; Arıcı M.; Sghaier J.</td>
+        <td>Optimizing PCM Integrated Wall and Roof for Energy Saving in Building under Various Climatic Conditions of Mediterranean Region</td>
+        <td>2023</td>
+        <td>Buildings</td>
+        <td>10.3390/buildings13030806</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85151623481&doi=10.3390%2fbuildings13030806&partnerID=40&md5=35026ff1b0804392dc9bb208b4b2434c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Cherif A.; González-Corrochano B.; Moussi B.; Jamoussi F.; Alonso-Azcárate J.</td>
+        <td>Influence of kiln type on the production of lightweight aggregates</td>
+        <td>2023</td>
+        <td>Materials and Structures/Materiaux et Constructions</td>
+        <td>10.1617/s11527-023-02237-2</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85171834330&doi=10.1617%2fs11527-023-02237-2&partnerID=40&md5=59c9b42993ab3219858e0b296f2a37e3"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mrabet C.; Jaballah R.; Mahdhi N.; Boukhachem A.; Amlouk M.</td>
+        <td>CuO-ZnO nanocomposites-based thin films: Characterization, physical properties and sunlight photocatalytic degradation of organic pollutants</td>
+        <td>2023</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2023.172252</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85171524679&doi=10.1016%2fj.jallcom.2023.172252&partnerID=40&md5=8a55ee92cc9fc31e64f8caf2af21277e"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dakhlaoui I.; Karoui K.; Hajlaoui F.; Zaghrioui M.; Audebrand N.; Dallon M.; Jomni F.</td>
+        <td>A new supramolecular semiconductor palladium(ii) complex [(CH3)3N(CH2)3Br]2Pd2Cl6: structural study, optical and electrical properties</td>
+        <td>2023</td>
+        <td>New Journal of Chemistry</td>
+        <td>10.1039/d3nj00851g</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85152689892&doi=10.1039%2fd3nj00851g&partnerID=40&md5=083d23daea243d5cfb711c1d84a0257a"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mbarek F.; Chérif I.; Chérif A.; Alonso J.M.; Morales I.; de la Presa P.; Ammar S.</td>
+        <td>Insights into the Synthesis Parameters Effects on the Structural, Morphological, and Magnetic Properties of Copper Oxide Nanoparticles</td>
+        <td>2023</td>
+        <td>Materials</td>
+        <td>10.3390/ma16093426</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85159338923&doi=10.3390%2fma16093426&partnerID=40&md5=fbc8ea70b7b334e5979d29725fd786f0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Bouzidi W.; Nouri K.; Bartoli T.; Jaballah H.; Ayadim S.; Moscovici J.; Bessais L.</td>
+        <td>Low field magnetocaloric effect of PrCo 3 compounds</td>
+        <td>2022</td>
+        <td>Applied Physics A: Materials Science and Processing</td>
+        <td>10.1007/s00339-022-05702-x</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85131738818&doi=10.1007%2fs00339-022-05702-x&partnerID=40&md5=8d1754a1210cd4ae75cc42b264fb2a7b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Gassoumi A.; Bouarissa N.</td>
+        <td>Elastic and piezoelectric properties of ZnxCd1−xS crystals</td>
+        <td>2022</td>
+        <td>Optical and Quantum Electronics</td>
+        <td>10.1007/s11082-022-03516-y</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85124797487&doi=10.1007%2fs11082-022-03516-y&partnerID=40&md5=46de3d32270babc898f2c03971a16bee"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Bouzidi W.; Fersi R.; Mliki N.; Bessais L.</td>
+        <td>Structural, magnetic and magnetocaloric properties of (Pr,Sm)2Fe17 compound at room temperature</td>
+        <td>2022</td>
+        <td>Journal of Physics and Chemistry of Solids</td>
+        <td>10.1016/j.jpcs.2021.110438</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85118174062&doi=10.1016%2fj.jpcs.2021.110438&partnerID=40&md5=22e96a853e74c255dd3a73c48ac31956"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Boulesteix C.; Nihoul-Boutang G.; Yangui B.</td>
+        <td>Influence of upper laue areas on fine structure of bend contours near a high symmetry axis</td>
+        <td>2022</td>
+        <td>Physica Status Solidi: Applied Research</td>
+        <td>nan</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85192867879&partnerID=40&md5=e34973029ed2dc1682fd9cf832b8172d"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Taazayet W.; Mallek Zouari I.; Gemeiner P.; Dkhil B.; Thabet Mliki N.</td>
+        <td>Effect of Zn Substitution on the Structural, Optical Properties and Photocatalytic Activity of BiFeO3 Nanopowders</td>
+        <td>2022</td>
+        <td>Physica Status Solidi - Rapid Research Letters</td>
+        <td>10.1002/pssr.202200081</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85130222046&doi=10.1002%2fpssr.202200081&partnerID=40&md5=2c3cdedbab410af53a4ef82c48990cec"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Dakhlaoui I.; Karoui K.; Zaghrioui M.; Jomni F.</td>
+        <td>Vibrational spectroscopy, electrical, and thermal properties of [N (CH3)4][N(C2H5)4]CoCl4 compound</td>
+        <td>2022</td>
+        <td>Applied Organometallic Chemistry</td>
+        <td>10.1002/aoc.6621</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85124459265&doi=10.1002%2faoc.6621&partnerID=40&md5=2e35c5af99681c8076c029d66fc7ea53"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Nouri K.; Mliki N.; Bessais L.; Jemmali M.</td>
+        <td>Investigation of Magnetic Entropy Change in Intermetallic Compounds SmNi3−x Fex Based on Maxwell Relation and Phenomenological Model</td>
+        <td>2022</td>
+        <td>Crystals</td>
+        <td>10.3390/cryst12040481</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85128174281&doi=10.3390%2fcryst12040481&partnerID=40&md5=f651504247db80f3b49c06658d85453c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Wechteti L.; Souemti A.; Selmi A.; Romdhani-Younes M.</td>
+        <td>Simple approach for the synthesis of a 1,1'-(ethane-1,2 diylbis(azanediyl))bis(pentan-2-ol): 13C/1H NMR spectroscopy and electrical characterizations</td>
+        <td>2022</td>
+        <td>Indian Journal of Chemistry (IJC)</td>
+        <td>10.56042/ijc.v61i7.64627</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85140895980&doi=10.56042%2fijc.v61i7.64627&partnerID=40&md5=35179a0e360208a2b09b3436df22b507"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Nouri K.; Mliki N.; Bessais L.; Jemmali M.</td>
+        <td>Universality class change from Mean-Field to 3D-Heisenberg in magnetocaloric compounds SmNi3-xFex</td>
+        <td>2022</td>
+        <td>Chemical Physics Letters</td>
+        <td>10.1016/j.cplett.2021.139260</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85120880198&doi=10.1016%2fj.cplett.2021.139260&partnerID=40&md5=23dd54c6606024ab243b2054e0a6ac28"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Annealing effect on microstructure and magnetic properties of nanocrystalline Zr6Fe23 compound</td>
+        <td>2022</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2022.169650</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85133667123&doi=10.1016%2fj.jmmm.2022.169650&partnerID=40&md5=45fa75987b517017f34b6db077125c53"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Meddeb B.; Ayeb H.; Soltani T.; Guesmi A.; Hamadi N.B.; Jomni F.</td>
+        <td>Phase diagram, dielectric and electro optic properties of binary liquid crystals mixtures</td>
+        <td>2022</td>
+        <td>Liquid Crystals</td>
+        <td>10.1080/02678292.2022.2109768</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85136014511&doi=10.1080%2f02678292.2022.2109768&partnerID=40&md5=176344cb883787804bd58a4789a0f5c1"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Benkacem N.; Salhi A.; Khlifi A.; Nasraoui S.; Cambon C.</td>
+        <td>Destabilizing resonances of precessing inertia-gravity waves</td>
+        <td>2022</td>
+        <td>Physical Review E</td>
+        <td>10.1103/PhysRevE.105.035107</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85127222050&doi=10.1103%2fPhysRevE.105.035107&partnerID=40&md5=0b7fca703335e694dbf6095e6b853f6b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chérif A.; Saidani M.; Chérif I.; Greneche J.M.; Thabet Mliki N.</td>
+        <td>Structure analysis, morphological observations and electrical behavior of Co0·4Fe2·6O4 synthesized by surfactant-free solvothermal route</td>
+        <td>2022</td>
+        <td>Solid State Sciences</td>
+        <td>10.1016/j.solidstatesciences.2022.107028</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85140088686&doi=10.1016%2fj.solidstatesciences.2022.107028&partnerID=40&md5=fb16fabb223bbd7655d458d905149eff"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Nefzi C.; Askri B.; Yahmadi B.; El Guesmi N.; García J.M.; Kamoun-Turki N.; Ahmed S.A.</td>
+        <td>Competence of tunable Cu2AlSnS4 chalcogenides hydrophilicity toward high efficacy photodegradation of spiramycin antibiotic resistance-bacteria from wastewater under visible light irradiation</td>
+        <td>2022</td>
+        <td>Journal of Photochemistry and Photobiology A: Chemistry</td>
+        <td>10.1016/j.jphotochem.2022.114041</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85131247093&doi=10.1016%2fj.jphotochem.2022.114041&partnerID=40&md5=366db2c10cf42a1ac83b9f5fb06b577b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Trabelsi K.; Karoui K.; Hajlaoui F.; Zaghrioui M.; Jomni F.; Ben Rhaiem A.</td>
+        <td>An organic-inorganic hybrid cadmium chloride with face-sharing CdCl6 octahedral chains: Synthesis, crystal structure, optical and conduction mechanisms: [NH2(CH3)2]5Cd3Cl11</td>
+        <td>2022</td>
+        <td>Optical Materials</td>
+        <td>10.1016/j.optmat.2022.113100</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85140320511&doi=10.1016%2fj.optmat.2022.113100&partnerID=40&md5=8675717ef3df3c85b6a4d80d158cde90"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Alouhmy M.; Moubah R.; Lassri H.; Mliki N.</td>
+        <td>Investigation of the unusual temperature dependence of magnetic anisotropy in nanocrystalline Fe96Zr4 films</td>
+        <td>2022</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2022.169867</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85136709256&doi=10.1016%2fj.jmmm.2022.169867&partnerID=40&md5=98bd6b41fef7d8649568c244d0c3e90c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Nefzi C.; Askri B.; Dabaki Y.; García J.M.; Kamoun-Turki N.</td>
+        <td>Synthesis of new promising quaternary Cu2InSnS4 absorber layer: Physical behaviors, wettability and photocatalysis applications</td>
+        <td>2022</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2021.162771</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85120458395&doi=10.1016%2fj.jallcom.2021.162771&partnerID=40&md5=f093695b369c2a841c2982b74ba5c4dd"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Belkacem W.; Belhi R.; Mliki N.</td>
+        <td>Magneto-optical properties of cobalt nanoparticles in porous silicon</td>
+        <td>2022</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2022.169882</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85137169602&doi=10.1016%2fj.jmmm.2022.169882&partnerID=40&md5=6ff1bd9fe4e63e8bf99bb7e0f478048b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Taazayet W.B.; Zouari I.M.; Hosni N.; Dkhil B.; Mliki N.T.</td>
+        <td>Facile synthesis of pure BiFeO3 and Bi2Fe4O9 nanostructures with enhanced photocatalytic activity</td>
+        <td>2022</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-021-07459-0</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85120539859&doi=10.1007%2fs10854-021-07459-0&partnerID=40&md5=ae511700c8e25b7d5b214a263c564474"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Crystal structure, morphology and magnetic properties of nanocrystalline Zr 6 Fe 23 thin films grown on Si(001) substrate</td>
+        <td>2022</td>
+        <td>Applied Physics A: Materials Science and Processing</td>
+        <td>10.1007/s00339-022-05653-3</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85131009411&doi=10.1007%2fs00339-022-05653-3&partnerID=40&md5=cb8f0b1b4c4cac3b4a8f4f9ac30905e6"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Jaballah H.; Guetari R.; Mliki N.; Bessais L.</td>
+        <td>Magnetic properties, critical behavior and magnetocaloric effect in the nanocrystalline Pr2Fe16Al</td>
+        <td>2022</td>
+        <td>Journal of Physics and Chemistry of Solids</td>
+        <td>10.1016/j.jpcs.2022.110752</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85133462861&doi=10.1016%2fj.jpcs.2022.110752&partnerID=40&md5=9641ef57f3eaf10153ea1c7ea281e3b8"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Dalia A.P.</td>
+        <td>Microstructure, Exchange Interaction and Magnetic Properties of Nanocrystalline Zr 6 Co 23 /MgO(001) Films</td>
+        <td>2022</td>
+        <td>Journal of Superconductivity and Novel Magnetism</td>
+        <td>10.1007/s10948-022-06281-x</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85133630325&doi=10.1007%2fs10948-022-06281-x&partnerID=40&md5=c000b11b5ec29a56b7fc92ec0ae7afdd"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Mliki N.; Bessais L.</td>
+        <td>Influence of Chemical Substitution and Light Element Insertion on the Magnetic Properties of Nanocrystalline Pr2Co7 Compound</td>
+        <td>2022</td>
+        <td>Magnetochemistry</td>
+        <td>10.3390/magnetochemistry8020020</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85123929283&doi=10.3390%2fmagnetochemistry8020020&partnerID=40&md5=2906c6704a2fb730f3987550ed7da418"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Amara M.A.; Larbi T.; Mahdhi N.; Saadallah F.; Amlouk M.</td>
+        <td>Enhancement of photocatalytic degradation of MB by recyclable Li/Mn3O4 thin films</td>
+        <td>2021</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-021-05756-2</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85103377191&doi=10.1007%2fs10854-021-05756-2&partnerID=40&md5=ac0d6e67731bbe53606ab3512fffbeea"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Belhi R.</td>
+        <td>Effects of the Annealing Temperature before Cooling under Magnetic Field on Perpendicular Exchange Coupling in (Pt/Co)5/NiO</td>
+        <td>2021</td>
+        <td>Physica Status Solidi (A) Applications and Materials Science</td>
+        <td>10.1002/pssa.202100417</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85116479803&doi=10.1002%2fpssa.202100417&partnerID=40&md5=35ab0082f8aebe7d98bf23f7fb81a62d"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Majouri A.; Larbi T.</td>
+        <td>Theoretical and experimental investigation of the electronic, optical, electric, and elastic properties of Zn-doped anatase TiO2 for photocatalytic applications</td>
+        <td>2021</td>
+        <td>Applied Physics A: Materials Science and Processing</td>
+        <td>10.1007/s00339-021-04721-4</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112163754&doi=10.1007%2fs00339-021-04721-4&partnerID=40&md5=eb5f6754464d217bca052f6e937052ef"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chérif S.F.; Amor R.B.; Chérif A.; Zid M.F.</td>
+        <td>Conductivity study by complex impedance spectroscopy of solid solution AgxK1 − xNb4AsO13 (x = 0.2 and 0.62): effect of the substitution of K+ by Ag+ cations on the ionic conduction properties</td>
+        <td>2021</td>
+        <td>Journal of Solid State Electrochemistry</td>
+        <td>10.1007/s10008-021-04976-0</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106270788&doi=10.1007%2fs10008-021-04976-0&partnerID=40&md5=83e3adf7c28cc87917c4459722cac81d"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dakhlaoui I.; Karoui K.; Hajlaoui F.; Audebrand N.; Roisnel T.; Jomni F.</td>
+        <td>[(CH3)3N(CH2)2Br]2[CoBr4] halogenometallate complex: crystal structure, high-temperature reversible phase transition, electrical and optical properties</td>
+        <td>2021</td>
+        <td>Journal of Molecular Structure</td>
+        <td>10.1016/j.molstruc.2020.129684</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85097367962&doi=10.1016%2fj.molstruc.2020.129684&partnerID=40&md5=1c5178e9a3020edf3a4188cd18bc336e"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ayeb H.; Missaoui T.; Mouhli A.; Jomni F.; Soltani T.</td>
+        <td>Dielectric spectroscopy study on the impact of magnetic and nonmagnetic nanoparticles dispersion on ionic behavior in nematic liquid crystal</td>
+        <td>2021</td>
+        <td>Phase Transitions</td>
+        <td>10.1080/01411594.2020.1865536</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85098563584&doi=10.1080%2f01411594.2020.1865536&partnerID=40&md5=b64628adb16d481e00b875ce3e196965"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Karoui K.; Rhaiem A.B.; Jemni F.</td>
+        <td>Li2M(WO4)2 (M = Ni, Cu, Co): electrical, thermal, and optical properties</td>
+        <td>2021</td>
+        <td>Ionics</td>
+        <td>10.1007/s11581-021-03956-8</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101249106&doi=10.1007%2fs11581-021-03956-8&partnerID=40&md5=068f9305b49e2a41202709d8353cfe33"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Haouas B.; Missaoui T.; Aissa M.A.B.; Jomni F.; Arfaoui Y.; Soltani T.</td>
+        <td>Synthesis and characterization of lateral fluorosubstituents liquid crystals</td>
+        <td>2021</td>
+        <td>Biointerface Research in Applied Chemistry</td>
+        <td>10.33263/BRIAC115.1249512505</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101079346&doi=10.33263%2fBRIAC115.1249512505&partnerID=40&md5=4f1c0e1a97434b5b24f64a0036ed7485"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Askri B.; Riahi I.; Mimouni R.; Amlouk M.</td>
+        <td>Photoluminescence and dielectric properties of (Al/Cu) and (In/Cu) co-doped ZnO sprayed thin films under the oxygen deficiency conditions</td>
+        <td>2021</td>
+        <td>Superlattices and Microstructures</td>
+        <td>10.1016/j.spmi.2020.106731</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096195590&doi=10.1016%2fj.spmi.2020.106731&partnerID=40&md5=d6580ab61ad2ff4d7ee1201a4bd5aa1c"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Jomni F.</td>
+        <td>Understanding the physical origin of negative capacitance (NC) in High-k oxides: Experimental and ab-initio approach</td>
+        <td>2021</td>
+        <td>Chemical Physics Letters</td>
+        <td>10.1016/j.cplett.2021.138964</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112223833&doi=10.1016%2fj.cplett.2021.138964&partnerID=40&md5=95639f6a68977e7c6852644e9bf13e22"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Selmi A.; Khaldi O.; Mascot M.; Jomni F.; Carru J.-C.</td>
+        <td>High-performance screen-printed Au/Ba0.85Sr0.15TiO3/Pt capacitors for tunable devices</td>
+        <td>2021</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2021.160340</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106867017&doi=10.1016%2fj.jallcom.2021.160340&partnerID=40&md5=2cb63e3d4f8c73106596c22b817b64f0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ayeb H.; Alaya S.; Derbali M.; Samet L.; Bennaceur J.; Jomni F.; Soltani T.</td>
+        <td>Dielectrical, electro-optical and textural studies of 5CB nematic liquid crystal doped with TiO2 and Cu-TiO2 nanoparticle</td>
+        <td>2021</td>
+        <td>Liquid Crystals</td>
+        <td>10.1080/02678292.2020.1771784</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85086783935&doi=10.1080%2f02678292.2020.1771784&partnerID=40&md5=25a3e8aba086127fb715ff56d70066ec"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dalia A.P.; Fersi R.</td>
+        <td>Zr6Co23 thin films grown on Al2O3(0001) substrate by RF magnetron sputtering: Correlation between the microstructural and magnetic properties</td>
+        <td>2021</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2021.167874</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85104688178&doi=10.1016%2fj.jmmm.2021.167874&partnerID=40&md5=d2c2ec69a1b5be982b2b90752d16e1cb"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Trabelsi K.; Karoui K.; Jomni F.; Ben Rhaiem A.</td>
+        <td>Optical and AC conductivity behavior of sodium orthosilicate Na2CoSiO4</td>
+        <td>2021</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2021.159099</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101345221&doi=10.1016%2fj.jallcom.2021.159099&partnerID=40&md5=a81720c265c84b42777d06415eb67d03"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Slimani Y.; Selmi A.; Hannachi E.; Almessiere M.A.; AlFalah G.; AlOusi L.F.; Yasin G.; Iqbal M.</td>
+        <td>Study on the addition of SiO2 nanowires to BaTiO3: Structure, morphology, electrical and dielectric properties</td>
+        <td>2021</td>
+        <td>Journal of Physics and Chemistry of Solids</td>
+        <td>10.1016/j.jpcs.2021.110183</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106496286&doi=10.1016%2fj.jpcs.2021.110183&partnerID=40&md5=0092a019a58f8baf5cc97a83c327fff3"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Cherif A.; Saidani M.; Dakhlaoui I.; Greneche J.M.; Mliki N.T.</td>
+        <td>Co-ferrite nanostructures prepared by solvothermal route; new ultra-low k dielectrics</td>
+        <td>2021</td>
+        <td>Materials Chemistry and Physics</td>
+        <td>10.1016/j.matchemphys.2021.125102</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112442442&doi=10.1016%2fj.matchemphys.2021.125102&partnerID=40&md5=045993d66107cf48fc1632725bba5bc0"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dakhlaoui I.; Karoui K.; Hajaloui F.; Jomni F.</td>
+        <td>Higher temperature order–disorder transition, electrical and optical properties of [N(C2H5)4]2Pd2Cl6 compound</td>
+        <td>2020</td>
+        <td>Applied Organometallic Chemistry</td>
+        <td>10.1002/aoc.5990</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090964188&doi=10.1002%2faoc.5990&partnerID=40&md5=1c5109b86de825ff67da8e964b5b0263"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Gueddim A.; Bouarissa N.</td>
+        <td>First-principles study of rocksalt MgxZn1−                             xO: band structure and optical spectra</td>
+        <td>2020</td>
+        <td>Philosophical Magazine</td>
+        <td>10.1080/14786435.2020.1727974</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079722875&doi=10.1080%2f14786435.2020.1727974&partnerID=40&md5=e3f03356086e97bbcc8433613e05ad79"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Hamandi M.; Triki M.; Llorca J.; Jomni F.; Aalomair N.; Kochkar H.</td>
+        <td>Investigation of physicochemical and electrical properties of TiO 2 nanotubes/graphene oxide nanocomposite</td>
+        <td>2020</td>
+        <td>Bulletin of Materials Science</td>
+        <td>10.1007/s12034-020-2072-1</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85083188607&doi=10.1007%2fs12034-020-2072-1&partnerID=40&md5=35e4d2e46441fa786af88ca5a8666a3b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Selmi A.; Fkiri A.; Bouslimi J.; Besbes H.</td>
+        <td>Improvement of dielectric properties of ZnO nanoparticles by Cu doping for tunable microwave devices</td>
+        <td>2020</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-020-04408-1</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091611849&doi=10.1007%2fs10854-020-04408-1&partnerID=40&md5=3eda6c93d6bb04df4e33c8f6b069cb4e"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Yamkane Z.; Fersi R.; Rachid F.Z.; Moubah R.; Lassri H.; Mliki N.; Alleg S.; Sajieddine M.; Bessais L.</td>
+        <td>Law of Approach to Magnetic Saturation in Nanocrystalline Pr2Co7C x (x ≤ 1): Effects of Carbonation</td>
+        <td>2020</td>
+        <td>SPIN</td>
+        <td>10.1142/S2010324720500162</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85092456924&doi=10.1142%2fS2010324720500162&partnerID=40&md5=1f60bb117948d5ca3ccbc082bf7ae8c2"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Saadi M.; Gonon P.; Vallée C.; Jomni F.; Jalaguier E.; Bsiesy A.</td>
+        <td>Ag/HfO2-based conductive bridge memories elaborated by atomic layer deposition: impact of inert electrode and HfO2 crystallinity on resistive switching mechanisms</td>
+        <td>2020</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-020-03903-9</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85087721994&doi=10.1007%2fs10854-020-03903-9&partnerID=40&md5=945af7acdaf74dc7462488b424efd8cd"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Jomni F.; Gonon P.</td>
+        <td>Correlations between first-principles calculations and electric properties of HfO2:Al2O3alloys for metal-insulator-metal (MIM) capacitor applications</td>
+        <td>2020</td>
+        <td>Journal of Applied Physics</td>
+        <td>10.1063/5.0025130</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85094138363&doi=10.1063%2f5.0025130&partnerID=40&md5=7da8ba9faf1efa3506e371dc7563dc98"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Ayeb H.; Derbali M.; Mouhli A.; Soltani T.; Jomni F.; Fresnais J.; Lacaze E.</td>
+        <td>Viscoelastic and dielectric properties of 5CB nematic liquid crystal doped by magnetic and nonmagnetic nanoparticles</td>
+        <td>2020</td>
+        <td>Physical Review E</td>
+        <td>10.1103/PhysRevE.102.052703</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85097579146&doi=10.1103%2fPhysRevE.102.052703&partnerID=40&md5=61f50b2156f6362e5c9c8b6642d2d166"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Khaldi O.; Jomni F.; Gonon P.; Vallée C.</td>
+        <td>AC and DC bias effect on capacitance–voltage nonlinearities in Au/HfO2/M (M = Pt, TiN, W, and AlCu) MIM capacitors: effect of the bottom electrode material</td>
+        <td>2020</td>
+        <td>Journal of Materials Science: Materials in Electronics</td>
+        <td>10.1007/s10854-020-04440-1</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091171903&doi=10.1007%2fs10854-020-04440-1&partnerID=40&md5=6dd62aa0e16a60d5e5be2b06d19025f9"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mahfoudh N.; Karoui K.; Jomni F.; Ben Rhaiem A.</td>
+        <td>Structural phase transition, thermal analysis, and spectroscopic studies in an organic–inorganic hybrid crystal: [(CH3)2NH2]2ZnBr4</td>
+        <td>2020</td>
+        <td>Applied Organometallic Chemistry</td>
+        <td>10.1002/aoc.5656</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85082967177&doi=10.1002%2faoc.5656&partnerID=40&md5=e39cae1d75c27ead27bf2da82657b71a"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Hajlaoui M.E.; Benchaabane A.; Benhamed Z.; Mahdhi N.; Al-Tabbakh A.A.; Kouki F.</td>
+        <td>Dielectric properties of poly-(3-octylthiophene) thin films mixed with oleic acid capped cadmium selenide nanoparticles</td>
+        <td>2020</td>
+        <td>RSC Advances</td>
+        <td>10.1039/d0ra09236c</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85098152384&doi=10.1039%2fd0ra09236c&partnerID=40&md5=80e165ab020226ecc466614e9458186d"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Bezergheanu A.; Patroi D.; Cizmas C.B.; Bessais L.; Mliki N.</td>
+        <td>Study of exchange interaction, magnetization correlations and random magnetic anisotropy in nanocrystalline Pr2Co7 films deposited on Si substrate</td>
+        <td>2020</td>
+        <td>Journal of Magnetism and Magnetic Materials</td>
+        <td>10.1016/j.jmmm.2019.165816</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072254574&doi=10.1016%2fj.jmmm.2019.165816&partnerID=40&md5=5f4ddb44a14458754ea22aa5b6cdf175"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Fersi R.; Jabbalah H.; Bezergheanu A.; Patroi D.; Cizmas C.B.; Bessais L.; Mliki N.</td>
+        <td>Microstructure and magnetic anisotropy properties of Pr2Co7 films deposited on Al2O3(0001) substrate</td>
+        <td>2020</td>
+        <td>Vacuum</td>
+        <td>10.1016/j.vacuum.2020.109168</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85077748049&doi=10.1016%2fj.vacuum.2020.109168&partnerID=40&md5=8f11abdf3c350e2d88652d0e41c858bd"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Bouzidi W.; Patout L.; Charai A.; Mliki N.; Bessais L.</td>
+        <td>Crystal structure of nanocrystalline Pr5Co19 compound and its hydrogen storage properties</td>
+        <td>2020</td>
+        <td>International Journal of Hydrogen Energy</td>
+        <td>10.1016/j.ijhydene.2020.02.079</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85081686285&doi=10.1016%2fj.ijhydene.2020.02.079&partnerID=40&md5=a867cc49cf95f4954f66a5097b891ac2"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Mimouni R.; Askri B.; Larbi T.; Amlouk M.; Meftah A.</td>
+        <td>Photocatalytic degradation and photo-generated hydrophilicity of Methylene Blue over ZnO/ZnCr2O4 nanocomposite under stimulated UV light irradiation</td>
+        <td>2020</td>
+        <td>Inorganic Chemistry Communications</td>
+        <td>10.1016/j.inoche.2020.107889</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85082016718&doi=10.1016%2fj.inoche.2020.107889&partnerID=40&md5=0c9507a429e86860195aa8690df0843a"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Nouira W.; Gassoumi M.</td>
+        <td>Spectroscopic ellipsometry analysis of a antimony trisulfide (Sb2 S3) thin film</td>
+        <td>2020</td>
+        <td>Chalcogenide Letters</td>
+        <td>nan</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090847728&partnerID=40&md5=526be49ed11f827d690ad9b04d083937"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Drissi N.; Bouarissa N.; Jomni F.</td>
+        <td>Optical properties and chemical bonding of 3C-SiC under high-pressure</td>
+        <td>2020</td>
+        <td>Optik</td>
+        <td>10.1016/j.ijleo.2019.163613</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075889249&doi=10.1016%2fj.ijleo.2019.163613&partnerID=40&md5=d919374893ccb7da1f67a0967657ca65"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Selmi A.; Mascot M.; Jomni F.; Carru J.-C.</td>
+        <td>Investigation of interfacial dead layers parameters in Au/Ba0.85Sr0.15TiO3/Pt capacitor devices</td>
+        <td>2020</td>
+        <td>Journal of Alloys and Compounds</td>
+        <td>10.1016/j.jallcom.2020.154048</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079012458&doi=10.1016%2fj.jallcom.2020.154048&partnerID=40&md5=fc56434fc8898a4084c8a15b05e2ad3b"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Chérif S.F.; Chérif A.; Dridi W.; Zid M.F.</td>
+        <td>Ac conductivity, electric modulus analysis, dielectric behavior and Bond Valence Sum analysis of Na3Nb4As3O19 compound</td>
+        <td>2020</td>
+        <td>Arabian Journal of Chemistry</td>
+        <td>10.1016/j.arabjc.2020.04.003</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85084036989&doi=10.1016%2fj.arabjc.2020.04.003&partnerID=40&md5=685156fdce9b350d916f6a2e3745b6fd"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Dakhlaoui I.; Karoui K.; Jomni F.</td>
+        <td>Thermal stability, low gap energy and high Temperature order–disorder Phase Transition in Hybrid Material: [N (CH3)4]2PdCl4</td>
+        <td>2020</td>
+        <td>Applied Organometallic Chemistry</td>
+        <td>10.1002/aoc.5545</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85078817732&doi=10.1002%2faoc.5545&partnerID=40&md5=652cfa0fb4f97061850f1eb2e44d745a"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Hammami S.; Sylvestre A.; Jomni F.; Jean-Mistral C.</td>
+        <td>Electrical conduction in dielectric elastomer transducers</td>
+        <td>2020</td>
+        <td>IEEE Transactions on Dielectrics and Electrical Insulation</td>
+        <td>10.1109/TDEI.2019.008223</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079480447&doi=10.1109%2fTDEI.2019.008223&partnerID=40&md5=c9ff17cc4a44975e1f784c3dfd33c4a6"target="_blank">Lien</a></td>
+    </tr>
+    
+    <tr>
+        <td>Salhi A.; Khlifi A.; Cambon C.</td>
+        <td>Nonlinear effects on the precessional instability in magnetized turbulence</td>
+        <td>2020</td>
+        <td>Atmosphere</td>
+        <td>10.3390/ATMOS11010014</td>
+        <td><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079796141&doi=10.3390%2fATMOS11010014&partnerID=40&md5=4d2942177a4c95a8e076e93e9e2ba7a0"target="_blank">Lien</a></td>
+    </tr>
+
+      </tbody>
+    </table>
+  </main>
+      <button id="backToTop" title="Retour en haut">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2>À propos</h2>
+        <p>
+            Laboratoire spécialisé dans la synthèse et la caractérisation de matériaux innovants, en particulier les nanostructures et matériaux intelligents.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="acceuil-lmop.html">Accueil</a></li>
+          <li><a href="presentation-lmop.html">Présentation</a></li>
+          <li><a href="equipe-lmop.html">Équipes</a>
+          <li><a href="projet-lmop.html">Projets</a></li>
+          <li><a href="publications-lmop.html">Publications</a>
+          <li><a href="manifestation-lmop.html">Manifestations et Jounrées Scientifiques</a></li>
+          <li><a href="actualites-lmop.html">Actualités</a></li>
+        </ul>
+    </div>
+      <div class="footer-section">
+        <h2>Liens utiles</h2>
+        <ul>
+          <li><a href="https://fst.rnu.tn" target="_blank">FST</a></li>
+          <li><a href="https://www.utm.rnu.tn" target="_blank">UTM</a></li>
+          <li><a href="https://www.mes.tn" target="_blank">MESRS</a></li>
+          <li><a href="https://www.universites.tn" target="_blank">Portail Universitaire</a></li>
+          <li><a href="https://cnudst.rnrt.tn" target="_blank">CNDUST</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:laboratoirelmoplres@gmail.com">laboratoirelmoplres@gmail.com</a></p>
+        <p>Tél : +216 98 957 001 </p>
+        <p>Adresse : Université de Tunis El Manar - Faculté des Sciences de Tunis, Département de Physique</p>
+        <p> 2092 Manar II - Tunis, Tunisie </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Laboratoire LMOP — Tous droits réservés.
+    </div>
+  </footer>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="navbar.js"></script>
+<script src="translate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="navbar.js"></script>
+<script src="translate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script>
+    function getQueryParam(param) {
+      return new URLSearchParams(window.location.search).get(param);
+    }
+   
+    $(document).ready(function () {
+      if ($.fn.dataTable.isDataTable('#articlesTable')) {
+        $('#articlesTable').DataTable().destroy();
+      }
+      const table = $('#articlesTable').DataTable({
+        order: [[2, 'desc']],
+        dom: 'Bfrtip',
+        buttons: ['copyHtml5', 'excelHtml5', 'pdfHtml5', 'print'],
+        pageLength: 10,
+        language: {
+             decimal: ",",
+             Copy:"Copier",
+             Print: "Imprimer",
+          thousands: " ",
+          processing: "Traitement en cours...",
+          search: "Rechercher :",
+          lengthMenu: "Afficher _MENU_ entrées",
+          info: "Affichage de _START_ à _END_ sur _TOTAL_ entrées",
+          infoEmpty: "Affichage de 0 à 0 sur 0 entrée",
+          infoFiltered: "(filtré de _MAX_ entrées au total)",
+          loadingRecords: "Chargement...",
+          zeroRecords: "Aucune entrée correspondante trouvée",
+          emptyTable: "Aucune donnée disponible dans le tableau",
+          paginate: {
+            first: "Premier",
+            previous: "Précédent",
+            next: "Suivant",
+            last: "Dernier"
+          },
+        }
+      });
+      const an = getQueryParam('annee');
+      if (an) {
+        table.column(2).search(an).draw();
+      }
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const table = document.getElementById("articlesTable");
+    const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.textContent.trim());
+
+    table.querySelectorAll("tbody tr").forEach(row => {
+      row.querySelectorAll("td").forEach((cell, index) => {
+        cell.setAttribute("data-label", headers[index]);
+      });
+    });
+  });
+</script>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const table = document.getElementById("articlesTable");
+    const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.textContent.trim());
+
+    table.querySelectorAll("tbody tr").forEach(row => {
+      row.querySelectorAll("td").forEach((cell, index) => {
+        cell.setAttribute("data-label", headers[index]);
+      });
+    });
+  });
+</script>
+  <script>
+  // Affichage ou masquage du bouton selon le scroll
+  window.addEventListener('scroll', function() {
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  // Remonter en haut en douceur
+  document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+ body { margin: 0;
+   font-family: "Merriweather", serif, sans-serif;
+   background: #f0f2f5; }
+ header { background: #007bff; color: #fff; padding: 1rem 2rem; }
+ .navbar, .dropdown-content a { color: #000; }
+ .dropdown-content a:hover { background: #f1f1f1; }
+ .navigation {
+  display: flex;
+  align-items: baseline; 
+  gap: 12px;
+}
+
+.navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  color:rgb(32, 32, 222)
+}
+.navigation a:hover{
+  color:rgb(17, 175, 237)
+}
+
+h1{
+ font-size: 2rem;
+ font-weight: bold;
+ color:#133b5c;
+}
+.navigation p {
+  font-size: 1rem;
+ text-decoration: none;
+ color:#133b5c;
+ 
+}
+
+ main { padding: 2rem;
+  margin-top: 120px; }
+ table.dataTable { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px;}
+ th { background: #007bff !important; color: #fff !important; }
+ td, th { padding: 12px !important; }
+ a.link-full { word-break: break-all; color: #007bff; text-decoration: none; }
+ a.link-full:hover { text-decoration: underline; }
+ 
+ /* Force un layout fixe pour respecter les largeurs définies */
+ #backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+#articlesTable {
+  table-layout: fixed !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+
+}
+ .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_paginate {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom:  1rem;
+
+  }
+/* Largeurs de colonnes */
+#articlesTable th:nth-child(1),
+#articlesTable td:nth-child(1) { width: 30% !important; }  /* Auteur */
+#articlesTable th:nth-child(2),
+#articlesTable td:nth-child(2) { width: 30% !important; }  /* Titre */
+#articlesTable th:nth-child(3),
+#articlesTable td:nth-child(3) { width: 5% !important; }  /* Revue */
+#articlesTable th:nth-child(4),
+#articlesTable td:nth-child(4) { width: 10% !important; }  /* Année */
+#articlesTable th:nth-child(5),
+#articlesTable td:nth-child(5) { width: 20% !important; }  /* Lien */
+#articlesTable th:nth-child(6),
+#articlesTable td:nth-child(6) { width: 5% !important; }  /* Lien */
+/* Pour que le texte ne déborde pas */
+#articlesTable td, 
+#articlesTable th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ #articlesTable td, 
+  #articlesTable th {
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 1rem;
+  }
+
+  .navigation a,
+  .navigation p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin-top: 100px;
+  }
+
+  table.dataTable {
+    font-size: 0.9rem;
+  }
+
+  #backToTop {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  #articlesTable th,
+  #articlesTable td {
+    font-size: 0.85rem;
+    padding: 8px !important;
+  }
+
+  /* Optional: Allow table to scroll horizontally on small screens */
+  #articlesTable {
+    display:flexbox;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+   
+  #articlesTable{
+  margin-top: 20px;
+  }
+
+  /* Masquer les colonnes 5 (Lien) et 6 (PDF) */
+  #articlesTable td:nth-child(5),
+  #articlesTable th:nth-child(5){
+    display: none;
+  }
+
+  
+
+  #articlesTable th:nth-child(1),
+#articlesTable td:nth-child(1) { width: 20% !important; }  /* Auteur */
+
+#articlesTable th:nth-child(2),
+#articlesTable td:nth-child(2) { width: 30% !important; }  /* Titre */
+
+#articlesTable th:nth-child(3),
+#articlesTable td:nth-child(3) { width:15% !important;} 
+
+#articlesTable th:nth-child(4),
+#articlesTable td:nth-child(4) { width: 20% !important;}   /* Année */
+
+#articlesTable th:nth-child(6),
+#articlesTable td:nth-child(6) { width: 15% !important; }  /* Lien 2 */
+
+
+}

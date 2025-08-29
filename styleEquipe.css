@@ -1,0 +1,333 @@
+  
+  body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    background-color: #f5f9fc;
+  }
+  .content{
+        margin-left: 300px;
+  }
+.navigation {
+  display: flex;
+  align-items: baseline; /* ou center selon ton style visuel */
+  gap: 12px;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  color:rgb(32, 32, 222)
+}
+.navigation a:hover{
+  color:rgb(17, 175, 237)
+}
+
+h1{
+ font-size: 2rem;
+ font-weight: bold;
+ color:#133b5c;
+ margin-left: 300px;
+}
+.navigation p {
+  font-size: 1rem;
+ text-decoration: none;
+ color:#133b5c;
+ 
+}
+  .layout {
+    display: flex;
+    flex: 1;
+  }
+
+ .navbar-left {
+     justify-content:center; /* centrer verticalement */
+      width: 200px;
+      overflow-x: hidden;
+      color:black;
+      position: fixed;
+      top: 120px;
+      left: 30px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+      overflow-y:hidden;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+      max-height: calc(100vh - 120px);
+}
+
+.navbar-left li {
+     color: black;
+      text-decoration: none;
+      margin: 0px 10;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      width: 100%;
+      transition: all 0.3s ease;
+      position:relative;
+      justify-content: center;
+}
+
+.navbar-left a {
+  display: block;
+  width: 100%; /* ← assure la même largeur pour tous */
+  box-sizing: border-box; /* prend en compte le padding dans la largeur */
+  background-color: #7db3ec;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left a:hover {
+  background-color: rgba(11, 11, 235, 0.957);
+  color: white;
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+ list-style: none; 
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  background-color: #cde1f8;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 2px 0;
+  text-align: left;
+}
+
+  .content {
+    margin-left: 300px;
+    padding: 20px 20px;
+    flex: 1;
+
+  }
+  .section-title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #1a3b5d;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 1.8em;
+    position: relative;
+  }
+  .equipe-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    gap: 30px}
+  .anchor-offset {
+  scroll-margin-top: 140px; /* hauteur de ta navbar */
+}
+   .cards-container {
+    margin-bottom: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: left;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(47, 114, 222, 0.1);
+      width: 300px;
+      text-align: center;
+      padding: 60px 20px 25px;
+      position: relative;
+      transition: transform 0.3s ease;
+      margin-top: 130px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid white;
+      box-shadow: 0 0 0 3px #ccc;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover .profile-pic {
+      box-shadow: 0 0 0 3px #007bff;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+h5 {
+  font-size: 1.2rem;                /* taille légèrement augmentée */
+  font-weight: 700;                 /* texte bien marqué */
+  color: #1561DA;                   /* bleu vif */
+  letter-spacing: 1px;              /* espacement des lettres */
+  position: relative;               /* pour positionner le pseudo-élément */
+  margin-left: 20px;                /* décalage léger vers la droite */
+  background: rgba(21, 97, 218, 0.1); /* fond très léger */
+  border-radius: 5px;               /* coins arrondis */
+  transition: all 0.3s ease;        /* transition douce au hover */
+}
+
+/* Un petit effet graphique avant le titre */
+h5::before {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1561DA;
+  font-size: 1.2rem;
+}
+
+/* Effet au survol pour attirer l’attention */
+h5:hover {
+  background: rgba(21, 97, 218, 0.2);
+  color: #0d07bf;
+  padding-left: 1.2rem;
+}
+
+
+    .badge {
+      background-color: #1c2b21;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      margin: 10px auto;
+      display: inline-block;
+    }
+
+    .institution {
+      color: #333;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .contact-icons {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      
+    }
+
+    .contact-icons a {
+      color: #555;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: #007bff;
+    }
+
+    .cv-link {
+      display: block;
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .cv-link:hover {
+      color: #0056b3;
+    }
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .navbar-left {
+    margin-top: 10px;
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: none;
+    align-items:normal;
+  }
+
+  .navbar-left a {
+    width: auto;
+    margin: 5px;
+  }
+  
+
+  .content {
+    margin: 0;
+    padding: 15px;
+  }
+.navigation {
+    margin-top: 200px;
+    margin-left: 15px;
+    gap: 8px;
+  }
+
+  h1,
+  .section-title {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .card {
+    width:300px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 80px;
+  }
+
+  .cards-container {
+    padding: 0 10px;
+    justify-content: center;
+    gap: 20px;
+   align-items: center;
+
+  }
+}
