@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soutenance HDR – Dr Ikbel Mallek-Zouari</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f6f6f6;
+      color: #222;
+    }
+    .container {
+      width: 90%;
+      max-width: 950px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .date-type {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .affiche {
+      width: 100%;
+      border-radius: 10px;
+      cursor: zoom-in;
+      margin: 15px 0;
+    }
+    .section-title {
+      font-size: 19px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 5px;
+      color: #003366;
+    }
+    ul {
+      line-height: 1.6;
+    }
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 18px;
+      background: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back:hover {
+      background: #01509d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="title">Soutenance d’Habilitation à Diriger des Recherches – Dr Ikbel Mallek-Zouari</div>
+    <div class="date-type">
+      03 septembre 2025 — Département de Physique, Faculté des Sciences de Tunis
+    </div>
+
+    <!-- Affiche cliquable -->
+    <img src="image\photos LMOP\soutenance Madame Ikbel 2.jpg" class="affiche" onclick="openLightbox(this.src)" alt="Affiche HDR Ikbel Mallek-Zouari">
+
+    <div class="section-title">Présentation</div>
+    <p>
+      Le Dr Ikbel Mallek-Zouari, Maître Assistante au département STIC à l’ISETCOM et membre du
+      <strong>Laboratoire Matériaux Organisation et Propriétés (LMOP, LR99ES17)</strong>, a soutenu son 
+      Habilitation à Diriger des Recherches en Physique le 3 septembre 2025.
+    </p>
+
+    <div class="section-title">Titre du travail</div>
+    <p><em>« Multiferroïques à base de ferrites de bismuth pour l’environnement : de la synthèse à l’application »</em></p>
+
+    <div class="section-title">Jury</div>
+    <ul>
+      <li>Pr. Samia Charfi Kaddour — FST — Présidente</li>
+      <li>Pr. Hamadi Khemakhem — FSS — Rapporteur</li>
+      <li>Pr. Fayçal Kouki — FST — Rapporteur</li>
+      <li>Pr. Hanene Akrout — CERTE — Examinatrice</li>
+      <li>Pr. Mouldi Zouaoui — FSB — Examinateur</li>
+    </ul>
+
+    <div class="section-title">Lieu</div>
+    <p>Salle Adnane Zemrli (P33), Département de Physique — Faculté des Sciences de Tunis.</p>
+
+    <a href="actualites-lmop.html" class="back">← Retour</a>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>

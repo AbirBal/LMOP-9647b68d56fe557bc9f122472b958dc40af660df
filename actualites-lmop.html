@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Actualités | Laboratoire Matériaux, Organisation et Propriétés </title>  
   <meta name="description" content="Actualités du LMOP : conférences, soutenances, recrutements et événements scientifiques.">
-  <link rel="icon" sizes="16x16" type="image/png" href="image\lmop-icon.png">
+  <link rel="icon" sizes="32X32" type="image/png" href="image\lmop-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
@@ -99,9 +99,36 @@
         <div class="news-title"> Prix Présidentiel du Meilleur Laboratoire de Recherche Scientifique, 2024</div>
         <div class="news-type">[Prix du Président de la République dans le domaine scientifique et technologique, édition 2024.]</div>
         <div class="news-description">Nous avons l’immense plaisir d’annoncer que le <strong>Laboratoire Matériaux Organisation et Propriétés (LMOP, LR99ES17), rattaché à la Faculté des Sciences de Tunis – Université de Tunis El Manar,</strong> a remporté le <strong> Prix Présidentiel du Meilleur Laboratoire de Recherche Scientifique</strong>.
-Cette distinction prestigieuse vient récompenser l’excellence et l’innovation de nos recherches dans les domaines des nanomatériaux, de l’énergie, de l’environnement, ainsi que l’engagement du LMOP dans la formation, l’ouverture internationale et la contribution aux Objectifs de Développement Durable.
+          Cette distinction prestigieuse vient récompenser l’excellence et l’innovation de nos recherches dans les domaines des nanomatériaux, de l’énergie, de l’environnement, ainsi que l’engagement du LMOP dans la formation, l’ouverture internationale et la contribution aux Objectifs de Développement Durable.
         </div>
       </div>
+
+      <div class="news-card">
+  <div class="news-date">03 Septembre 2025</div>
+  <div class="news-title">Soutenance d’Habilitaion Universitaire en Physique – Dr Ikbel Mallek-Zouari</div>
+  <div class="news-type">[Habilitation à Diriger des Recherches – Physique]</div>
+
+  <!-- Image cliquable -->
+  <img src="image\photos LMOP\soutenance Madame Ikbel 2.jpg" 
+       alt="Affiche de la soutenance HDR" 
+       class="news-image"
+       onclick="openLightbox(this.src)" />
+
+  <div class="news-description">
+    Le Dr Ikbel Mallek-Zouari, Maître Assistante au département STIC à l’ISETCOM et membre du 
+    <strong>Laboratoire Matériaux Organisation et Propriétés (LMOP, LR99ES17)</strong>, a soutenu son 
+    Habilitation à Diriger des Recherches en Physique le <strong>3 septembre 2025</strong> à la Faculté des Sciences de Tunis.
+    <br><br>
+    Intitulé : <em>« Multiferroïques à base de ferrites de bismuth pour l’environnement : de la synthèse à l’application »</em>.
+    <br><br>
+    <a href="actualité madame Ikbel.html" target="_blank" class="news-link">En savoir plus</a>
+  </div>
+</div>
+
+<!-- Lightbox simple -->
+<div id="lightbox" style="display:none;" onclick="this.style.display='none'">
+  <img id="lightbox-img" />
+</div>
 
       <div class="news-card">
         <div class="news-date">03 mai 2025</div>
@@ -196,6 +223,17 @@ Cette distinction prestigieuse vient récompenser l’excellence et l’innovati
     });
   });
 </script>
+<script>
+function openLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  img.src = src;
+  lightbox.style.display = "flex";
+}
 
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
 </body>
 </html>
