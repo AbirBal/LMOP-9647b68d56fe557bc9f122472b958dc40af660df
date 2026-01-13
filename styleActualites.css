@@ -158,10 +158,10 @@ h1 {
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.85);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 #lightbox img {
@@ -169,6 +169,39 @@ h1 {
   max-height: 90%;
   border-radius: 10px;
 }
+
+/* Bouton fermer */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Flèches */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  font-size: 45px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.lightbox-prev { left: 30px; }
+.lightbox-next { right: 30px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+  color: #ffcccc;
+}
+
 .news-link {
   display: inline-block;
   align-self:flex-end;
