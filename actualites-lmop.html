@@ -319,11 +319,6 @@
       behavior: 'smooth'
     });
   });
-</script>
-
-<script>
-let images = [];
-let currentIndex = 0;
 
 function openLightbox(imageElement) {
   const lightbox = document.getElementById("lightbox");
@@ -339,7 +334,6 @@ function openLightbox(imageElement) {
     nextBtn.classList.remove("hidden");
   } else {
     images = [imageElement];
-    isGallery = false;
     currentIndex = 0;
     prevBtn.classList.add("hidden");
     nextBtn.classList.add("hidden");
@@ -349,34 +343,6 @@ function openLightbox(imageElement) {
   lightbox.style.display = "flex";
 }
 
-function closeLightbox(event) {
-  if (event) event.stopPropagation();
-  document.getElementById("lightbox").style.display = "none";
-}
-
-function nextImage(event) {
-  if (!isGallery) return;
-  event.stopPropagation();
-  currentIndex = (currentIndex + 1) % images.length;
-  document.getElementById("lightbox-img").src = images[currentIndex].src;
-}
-
-function prevImage(event) {
-  if (!isGallery) return;
-  event.stopPropagation();
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  document.getElementById("lightbox-img").src = images[currentIndex].src;
-}
-
-/* Clavier */
-document.addEventListener("keydown", function (e) {
-  const lightbox = document.getElementById("lightbox");
-  if (lightbox.style.display === "flex") {
-    if (e.key === "Escape") closeLightbox();
-    if (isGallery && e.key === "ArrowRight") nextImage(e);
-    if (isGallery && e.key === "ArrowLeft") prevImage(e);
-  }
-});
 </script>
 <div id="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close" onclick="closeLightbox(event)">✕</span>
