@@ -117,9 +117,6 @@ h1 {
   cursor: not-allowed;
 }
 
-.active-page {
-  background-color: #0056b3;
-}
  #backToTop {
   position: fixed;
   bottom: 40px;

@@ -214,6 +214,10 @@ body {
   overflow: visible !important;
 }
 
+.navbar-links a.active {
+  color: #1f0de7;              /* texte blanc */
+  background-color: white; /* fond bleu */
+}
 
 /* ===============================
    RESPONSIVE DESIGN
