@@ -118,7 +118,7 @@ body {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
   right: 10px;
- left: auto;
+  left: auto;
 }
 
 .dropdown-content a {
@@ -169,8 +169,7 @@ body {
   color: white;
 }
 
-
-/* Sous-menu */
+/* Sous-menu desktop */
 .navbar-links li ul {
   display: none;
   position: absolute;
@@ -194,7 +193,6 @@ body {
 .navbar-links li ul li a {
   padding: 10px 15px;
   color: black;
-
 }
 .navbar-links li ul li {
   position: relative;
@@ -202,7 +200,7 @@ body {
 
 .navbar-links li ul li ul {
   top: 0;
-  left: 100%; /* s'affiche à droite du sous-menu parent */
+  left: 100%;
   display: none;
 }
 
@@ -210,83 +208,109 @@ body {
   background: linear-gradient(135deg, hsl(203, 69%, 46%), #84bae0);
   color: white;
 }
+
 .navbar-main, .navbar-sub, .navbar-links {
   overflow: visible !important;
 }
 
 .navbar-links a.active {
-  color: #1f0de7;              /* texte blanc */
-  background-color: white; /* fond bleu */
+  color: #1f0de7;
+  background-color: white;
 }
 
 /* ===============================
    RESPONSIVE DESIGN
 ================================ */
-@media (max-width: 1197px) {
+@media (max-width: 768px) {
 
-  .navbar-main{
-    flex-direction: row;
-  }
-  .navbar-sub {
-    flex-direction: row;
-    align-items:flex-start;
-    padding: 10px;
-  }
-
+  /* Afficher le bouton hamburger */
   .menu-toggle-sub {
     display: block;
   }
 
+  /* Cacher les liens par défaut */
   .navbar-links {
-    flex-direction: column;
-    width: 100%;
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
     background-color: white;
-    border-top: 1px solid #ccc;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    z-index: 999;
+    gap: 0;
   }
 
+  /* Afficher quand menu ouvert */
   .navbar-links.show {
     display: flex;
   }
 
-  .navbar-links li {
-    width: 100%;
-  }
-
   .navbar-links li a {
-    width: 100%;
     padding: 12px 20px;
-    color: black;
+    border-radius: 0;
+    border-bottom: 1px solid #f0f0f0;
   }
 
+  /* ---- Sous-menus niveau 1 (Équipes, Publications…) ---- */
   .navbar-links li ul {
-    position: relative;
-    top: 0;
-    left: 0;
+    display: none;
+    position: static;        /* pas d'absolute en mobile */
     box-shadow: none;
-    background: #f9f9f9;
+    border-radius: 0;
+    min-width: unset;
     width: 100%;
-  }
-.navbar-links li.open > ul {
-  display: block;
-}
-.navbar-links li > a::after {
-  float: right;
-}
-  .logo-img {
-    height: 25px;
+    padding-left: 16px;
+    border-left: 3px solid #21568b;
+    background-color: #f7f9fc;
   }
 
-  .logo-img-lmop {
-    height: 50px;
-    width: auto;
+  /* Annuler le hover desktop en mobile */
+  .navbar-links li:hover > ul {
+    display: none;
   }
 
-  .dropdown-content {
+  /* Afficher uniquement via la classe .open (JS) */
+  .navbar-links > li.open > ul {
+    display: block;
+  }
+
+  /* ---- Sous-sous-menus niveau 2 (Chercheurs → Assistants, P.E.S, Post-Doc) ---- */
+  .navbar-links li ul li ul {
+    display: none;
     position: static;
+    left: unset;
+    top: unset;
+    padding-left: 14px;
+    border-left: 3px solid #84bae0;
+    background-color: #eef4fb;
     box-shadow: none;
-    background: #f0f0f0;
+  }
+
+  /* Annuler hover desktop */
+  .navbar-links li ul li:hover > ul {
+    display: none;
+  }
+
+  /* Afficher via .open */
+  .navbar-links li ul li.open > ul {
+    display: block;
+  }
+
+  /* ---- Flèches indicatrices ---- */
+  .navbar-links li:has(> ul) > a::after {
+    content: ' ▾';
+    font-size: 0.8em;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .navbar-links li.open:has(> ul) > a::after {
+    content: ' ▴';
+    font-size: 0.8em;
+    float: right;
+    margin-right: 10px;
   }
 }
